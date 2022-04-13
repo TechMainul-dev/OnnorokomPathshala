@@ -1,0 +1,306 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    outline: 0rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.loginArea {
+    background: url(../img/Shadow.png);
+    width: 100%;
+    height: 85.956rem;
+    background-size: cover;
+}
+
+.navbar {
+    background: transparent linear-gradient(90deg, #7A2A7E 0%, #E31620 100%) 0% 0% no-repeat padding-box;
+    height: 7.9rem;
+}
+
+.userProfile img {
+    width: 5.4rem;
+    margin-top: -.4rem;
+}
+
+.loginCard {
+    width: 65.2rem;
+    height: 70rem;
+}
+
+h2 {
+    font-size: 3rem;
+    width: 44.2rem;
+    height: 8.8rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 5.2rem;
+    margin-bottom: 2.3rem;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+}
+
+.submitCard {
+    background: transparent linear-gradient(180deg, #762A82 0%, #9A245F 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px .3rem .6rem #FFFFFF;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 1.5rem;
+    margin-top: 16rem;
+    text-align: center;
+    justify-items: center;
+}
+
+footer {
+    margin-top: 10rem;
+}
+
+.contactDetails .footerLogo img {
+    margin-top: 1rem;
+}
+
+.footerArea .contactDetails ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footerArea .contactDetails h2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* -------common CSS close------- */
+
+.passReset {
+    width: 65.2rem;
+    height: 52.385rem;
+}
+
+.passReset img {
+    margin-top: 3.6rem;
+}
+
+.passReset h3 {
+    font-size: 2.6rem;
+    color: #fff;
+    margin-top: 5.8rem;
+    /* margin-bottom: 1.5rem; */
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.passReset .otpForm button {
+    margin-top: auto;
+}
+
+.loginForm {
+    text-align: center;
+}
+
+.input {
+    width: 48.9rem;
+    height: 5.5rem;
+    margin-top: 4rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px .3rem .6rem #00000029;
+    border-radius: .5rem;
+    display: inline-block;
+}
+
+.fa-solid {
+    font-size: 2.4rem;
+    color: #5F5F5F;
+    padding: 1rem;
+    margin-left: -20rem;
+    margin-top: .4rem;
+    border-right: .1rem solid #762A82;
+}
+
+.searchInput {
+    height: 5.5rem;
+    font-size: 2.4rem;
+    font-family: 'Typo Round Regular Demo Regular';
+    border: none;
+    margin-left: -4.5rem;
+}
+
+::placeholder {
+    color: #AAAAAA;
+}
+
+.loginForm button {
+    width: 14rem;
+    height: 4.5rem;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: .2rem solid #FFFFFF;
+    box-shadow: .3rem .3rem .5rem #782A80;
+    border-radius: 2.3rem;
+    margin-top: 5.8rem;
+    cursor: pointer;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+}
+
+.regButton {
+    text-align: center;
+}
+
+.regButton h3 {
+    font-size: 2.6rem;
+    color: #fff;
+    margin-top: 5.8rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.regButton button {
+    font-size: 2.4rem;
+    width: 21.1rem;
+    height: 5.4rem;
+    margin: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 2.7rem;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+}
+
+.loginForm button:hover,
+.regButton button:hover {
+    background: transparent linear-gradient(135deg, #9e4ab1 0%, #be222a 100%) 0% 0% no-repeat padding-box;
+    transition: all linear 0.4s;
+    box-shadow: 0px 0px 20px #9e4ab1;
+    color: #fff;
+}
+
+
+.forgotPass {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-family: roboto;
+}
+
+
+.otpResend {
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    margin-right: 13%;
+    line-height: 30px;
+    font-family: roboto;
+}
+
+.forgotPass a,
+.otpResend a {
+    color: #F6BD30;
+}
+
+.admittedClass {
+    width: 65.2rem;
+    height: 38.51rem;
+}
+
+.admittedClass .admit {
+    width: 30rem;
+    height: 5rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: all linear 0.3s ease-in-out;
+}
+
+.admittedClass .admit a {
+    line-height: 5rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+.admittedClass .admit:hover {
+    background: transparent linear-gradient(90deg, #882670 0%, #e0b8b8 51%, #872770 100%) 0% 0% no-repeat padding-box;
+}
+
+.admittedClass .admit i {
+    color: transparent;
+    border: none;
+}
+
+.admittedClass .admit i:hover,
+.selectBirthday i {
+    color: #fff;
+    padding: 1.2rem;
+    background-color: red;
+    border-radius: 10%;
+    margin-top: 0.5px;
+    transition: all linear 0.3s;
+}
+
+.admittedClass .admit a:hover {
+    font-size: 4rem;
+    transition: all linear 0.1s;
+}
+
+.selectBirthday {
+    width: 65.2rem;
+    height: 28.755rem;
+}
+
+.selectBirthday h2 {
+    margin-bottom: auto;
+}
+
+.selectBirthday select {
+    padding: .3rem;
+    font-size: 24px;
+}
+
+.selectBirthday select .placeholder {
+    color: #AAAAAA;
+}
+
+.selectBirthday input.date {
+    width: 50px;
+    background-color: #be222a;
+    font-size: 20px;
+}
+
+.selectBirthday i {
+    margin: 0 0 -1.7rem -1rem;
+}
+
+.newPassword {
+    width: 65.2rem;
+    height: 53.3rem;
+}
+
+.newPassword h2 {
+    width: 49.5rem;
+    margin-bottom: 5.2rem;
+}
+
+.success {
+    width: 65.2rem;
+    height: 47.307rem;
+}
+
+.success img {
+    margin-top: 3.73rem;
+}
+
+.success span {
+    text-transform: uppercase;
+    font-size: 4.579rem;
+    color: #FED481;
+    letter-spacing: 2.75px;
+    margin-top: 2.35rem;
+    margin-bottom: 1.72rem;
+    display: block;
+    font-family: 'Typo Round Demo';
+}
+
+.success h3 {
+    font-size: 2.4rem;
+    color: #fff;
+    /* margin-bottom: 1.5rem; */
+    font-family: 'Typo Round Regular Demo Regular';
+}

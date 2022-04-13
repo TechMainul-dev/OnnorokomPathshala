@@ -1,0 +1,682 @@
+@font-face {
+    font-family: 'Typo Round Italic Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Italic Demo'), url('../webfonts/Typo_Round_Italic_Demo.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Typo Round Thin Italic Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Thin Italic Demo'), url('../webfonts/Typo_Round_Thin_Italic Demo.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Typo Round Light Italic Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Light Italic Demo'), url('../webfonts/Typo_Round_Light_Italic_Demo.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Typo Round Bold Italic Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Bold Italic Demo'), url('../webfonts/Typo_Round_Bold_Italic_Demo.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Typo Round Regular Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Regular Demo Regular'), url('../webfonts/Typo_Round_Regular_Demo.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Typo Round Thin Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Thin Demo Regular'), url('../webfonts/Typo_Round_Thin_Demo.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Typo Round Light Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Light Demo Regular'), url('../webfonts/typo-round.light-demo.otf') format('otf');
+}
+
+
+@font-face {
+    font-family: 'Typo Round Bold Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Bold Demo Regular'), url('../webfonts/Typo_Round_Bold_Demo.woff') format('woff');
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 111rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.playlist button {
+    width: 21.8rem;
+    height: 5.5rem;
+    font-size: 2rem;
+    background: transparent linear-gradient(270deg, #E11722 0%, #742B84 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    border-radius: 2.8rem;
+    border: none;
+    font-family: 'Typo Round Bold Demo Regular';
+}
+
+.playlist button:hover,
+.playBtn:hover {
+    background: transparent linear-gradient(270deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
+    transition: all linear 0.3s;
+    box-shadow: .3rem .3rem .5rem #782A80;
+}
+
+
+/*  ================ Common css end ================= */
+
+
+
+
+
+
+
+/* ================ header area css start ================= */
+#navbar {
+    padding-top: .6rem;
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0rem;
+    background-size: cover;
+    width: 100%;
+    background-image: url(../img/headerBG.png);
+}
+
+/* -------------search area css start------------ */
+
+.searchButton {
+    display: inline-block;
+    margin: .6rem 0rem 0rem 0rem;
+    height: 0rem;
+    color: white;
+    cursor: pointer;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    font-size: large;
+    margin-right: 2rem;
+}
+
+.search:focus {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    border-radius: 2.8rem;
+    width: 51rem;
+    padding: 0 1.6rem 0 0;
+}
+
+.search {
+    background-color: #fff;
+    position: absolute;
+    border: none;
+    padding: 0;
+    width: 0;
+    height: 4.1rem;
+    z-index: 10;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.expandRight {
+    left: auto;
+    right: .5rem;
+}
+
+.expandRight:focus {
+    padding: 0 0 0 1.6rem;
+}
+
+/* ------------------------------- */
+nav button {
+    font-size: 2rem;
+    color: #D6182A;
+    width: 11.8rem;
+    height: 4.1rem;
+    border: none;
+    margin-top: -.2rem;
+}
+
+.navbar .topSearch {
+    padding-top: .2rem;
+}
+
+.collapse .navbar-nav .nav-link {
+    padding: 2px 5px;
+    margin-bottom: -2px;
+}
+
+.banner .signInBtn button span {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* -------------search area css end------------ */
+
+.banner {
+    background: url(../img/headerBG.png);
+    width: 100%;
+    height: 67.7rem;
+    background-size: cover;
+}
+
+.banner .row h1 {
+    width: 60.3rem;
+    height: 16.5rem;
+    font-size: 4rem;
+    text-shadow: 0rem .3rem .6rem #E11621;
+    margin-top: 8.5rem;
+}
+
+.banner .row h2 {
+    width: 43.5rem;
+    height: 8.8rem;
+    font-size: 3rem;
+    margin-top: -1rem;
+    font-weight: 200;
+}
+
+.banner .regButton {
+    width: 21.1rem;
+    height: 5.4rem;
+    font-size: 2.4rem;
+    color: #742C85;
+    border: .1rem solid #D6182A;
+    font-weight: 600;
+}
+
+.banner .regButton:hover,
+.signInButton:hover,
+.recentPlaylist .loadMore button:hover {
+    background: transparent linear-gradient(135deg, #9e4ab1 0%, #be222a 100%) 0% 0% no-repeat padding-box;
+    transition: all linear 0.4s;
+    box-shadow: 0px 0px 20px #9e4ab1;
+    color: #fff;
+}
+
+
+/* ================ header area css end ================= */
+
+
+
+
+
+
+
+
+
+/* ================ video area css start ================= */
+.display-4 {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #484848;
+}
+
+/* --------------video area common css close-------------- */
+
+
+/* --------------classSelection css area start-------------- */
+
+.classSelection .classSelectionHeader {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.classSelection .class {
+    margin: auto;
+    text-align: center;
+}
+
+.classSelection .class .selectClass {
+    width: 16.2rem;
+    height: 16.2rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-top: 3.5rem;
+    box-shadow: 0rem 0rem 2rem #24415D4D;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+}
+
+.classSelection .class .selectClass img {
+    /* margin-bottom: 1.4rem; */
+    width: 5rem;
+    height: 5rem;
+}
+
+.classSelection .class .selectClass span {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+
+/* --------------classSelection css area end-------------- */
+/* --------------selectedVideo css area start-------------- */
+
+.selectedVideo {
+    margin: auto;
+}
+
+.selectedVideoHeader {
+    margin-top: 20rem;
+    margin-bottom: 5rem;
+}
+
+.selectedPlaylist {
+    text-align: center;
+    /* align-items: center; */
+}
+
+.selectedPlaylist .card {
+    width: 35.1rem;
+    height: 40.3rem;
+    border-radius: 15px;
+    border: none;
+    margin-left: 12px;
+    box-shadow: 0px 0px 2rem #D9DCE3;
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.selectedPlaylist .card img {
+    width: 35.1rem;
+}
+
+.selectedPlaylist .card iframe {
+    width: 35.1rem;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.selectedPlaylist .card #banner-video {
+    width: 35.1rem;
+    height: 19.7rem;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.selectedPlaylist .card button {
+    width: 56px;
+    height: 56px;
+    margin-top: -30px;
+    border-radius: 50px;
+    border: none;
+    background: transparent linear-gradient(135deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    font-size: 18px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.selectedPlaylist .card button:hover {
+    transition: all linear 0.3s;
+    box-shadow: 0 0 20px #E11722;
+}
+
+
+.selectedPlaylist .card .card-body {
+    width: 326px;
+    padding: 2.1rem 0rem 0rem 2rem;
+}
+
+.selectedPlaylist .card .card-body h2 {
+    font-size: 2.6rem;
+}
+
+.selectedPlaylist .card .card-body h4 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.selectedPlaylist .card .card-body h4 span {
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.selectedPlaylist .card .card-body h4 img {
+    width: 18.76px;
+}
+
+.selectedPlaylist .card .card-body h3 {
+    height: 7rem;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.selectedPlaylist .card .card-body hr {
+    border: .1px solid #742B84;
+}
+
+.selectedPlaylist .card .card-body p {
+    font-size: 1.8rem;
+    font-weight: 450;
+}
+
+.selectedPlaylist .card .card-body .qty {
+    font-size: 1.4rem;
+    color: #7D8597;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+
+/* --------------selectedVideo css area end-------------- */
+/* --------------recentlyAdded css area start-------------- */
+
+.recentlyAdded {
+    margin-bottom: 16.45rem;
+}
+
+.recentlyAddedHeader {
+    margin-top: 20rem;
+    margin-bottom: 5rem;
+}
+
+.recentlyAdded .recentPlaylist {
+    text-align: center;
+}
+
+.recentlyAdded .recentPlaylist .card {
+    width: 25rem;
+    height: 33.742rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2rem #D9DCE3;
+    margin-top: 3rem;
+    display: inline-block;
+    margin-left: 1.4rem;
+    margin-top: 3rem;
+}
+
+.recentPlaylist .card .card-img {
+    width: 25rem;
+    height: 14.3rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.recentPlaylist .card .playBtn {
+    width: 41px;
+    height: 41px;
+    margin-top: -35px;
+    border-radius: 50px;
+    border: none;
+    background: transparent linear-gradient(135deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    font-size: 18px;
+    align-items: center;
+    position: absolute;
+    top: 49%;
+    left: 40%;
+}
+
+.recentPlaylist .card .playBtn i {
+    margin-left: 3px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+.recentPlaylist .card .card-body .header {
+    margin-top: 1.6rem;
+    margin-bottom: .8rem;
+
+}
+
+.recentPlaylist .card .card-body h2 {
+    font-size: 22px;
+}
+
+.recentPlaylist .card .card-body h4 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #7D8597;
+    font-family: 'Typo Round Bold Demo Regular';
+}
+
+.recentPlaylist .card .card-body h3 {
+    height: 82px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2.8rem;
+    text-align: left;
+    font-family: 'Typo Round regular Demo Regular';
+}
+
+.recentPlaylist .card .card-body .card-text button {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 2rem #D9DCE3;
+}
+
+.recentPlaylist .loadMoreBtn {
+    margin: auto;
+    padding-bottom: 60px;
+
+}
+
+.recentPlaylist .loadMore button {
+    width: 104px;
+    height: 26px;
+    border: 1px solid #475677;
+    border-radius: 28px;
+    background: transparent;
+}
+
+
+.recentPlaylist .card .card-body .card-text button:hover {
+    background-color: rgb(174, 191, 244);
+    box-shadow: 0px 10px 2rem #cd0a2b;
+
+}
+
+.selectedPlaylist .card:hover,
+.recentPlaylist .card:hover,
+.classSelection .selectClass:hover {
+    background: transparent linear-gradient(270deg, #b16ec1 0%, #e14b52 100%);
+    box-shadow: 0px 0px 20px #ce353d;
+    transition: all linear 0.3s;
+}
+
+/* --------------recentlyAdded css area end-------------- */
+/* ================ video area css end ================= */
+
+
+
+
+
+
+/* ================ pathshalaActivity area css start ================= */
+
+
+.pathshalaActivity {
+    height: 54rem;
+    background: transparent linear-gradient(180deg, #FEF4F4 0%, #F8F4F9 100%) 0% 0% no-repeat padding-box;
+
+}
+
+.pathshalaActivity .header {
+    padding: 5rem 0 10rem 0;
+}
+
+.pathshalaActivity .content .iconImg {
+    width: 14.4rem;
+    height: 14.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000026;
+    margin: auto;
+}
+
+.pathshalaActivity .content .iconImg:hover {
+    box-shadow: 0px 10px 20px #9e4ab1;
+    transition: all linear 0.3s;
+}
+
+.pathshalaActivity .content .iconImg img {
+    padding: 3.7rem;
+    align-items: center;
+}
+
+
+.pathshalaActivity .content .display-5 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1.9rem;
+    margin-bottom: 0;
+    font-family: 'Typo Round Bold Demo Regular';
+}
+
+.pathshalaActivity .content .outline {
+    font-size: 3rem;
+    color: #5D5D5D;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+/* ================ pathshalaActivity area css end ================= */
+
+
+
+
+
+
+/* ================ Footer area css start ================= */
+footer {
+    margin-top: 19.7rem;
+    width: 100%;
+    height: 49.1rem;
+    background: url(../img/footerBG.png);
+    background-size: cover;
+}
+
+.footerArea {
+    color: #fff;
+    margin: auto;
+}
+
+.footerArea .contactDetails {
+    margin-top: 10.8rem;
+    /* width: 25rem; */
+    height: 26rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.contactDetails h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Typo Round Bold Demo Regular';
+}
+
+.contactDetails .footerLogo img {
+    margin-top: auto;
+}
+
+.contactDetails ul {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 2.2rem;
+    margin-left: -1.7rem;
+    text-align: left;
+}
+
+.contactDetails ul li a {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 45px;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+}
+
+
+.contactDetails .socialIcon {
+    text-align: center;
+    /* margin: auto; */
+    margin-top: 2.2rem;
+}
+
+.contactDetails .socialIcon a i {
+    padding: .7rem;
+    font-size: 3.1rem;
+    color: #fff;
+}
+
+.contactDetails .socialIcon i:hover {
+    box-shadow: 0px 10px 10px;
+    transition: all linear 0.3s;
+    border-radius: 50%;
+}
+
+.copyright {
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.copyright h3 {
+    font-size: 20px;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.copyright h4 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Typo Round Thin Demo Regular';
+}
+
+.contactDetails ul li a:hover,
+.copyright:hover {
+    color: chartreuse;
+    transition: all linear 0.3s;
+}
+
+/* ================ Footer area css end ================= */

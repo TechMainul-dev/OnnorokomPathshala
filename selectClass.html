@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mainul Hasan Khan">
+    <title>OnnoRokom Pathshala | Home</title>
+    <link rel="icon" href="./img/onnorokomPathshala_icon.png">
+    <link rel="stylesheet" href="./css/all.css"> <!-- fontAwesome css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.css"> <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- my stylesheet -->
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/responsive.css"> <!-- my responsive stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link href="http://fonts.cdnfonts.com/css/typo-round" rel="stylesheet"> -->
+
+    <!-- OnnoRokom Pathshala project font -->
+    <script src="./jQuery/jquery.count.min.js"></script>
+    <!----jquery for counting---->
+</head>
+
+<body>
+    <header>
+        <section class="loginArea">
+            <nav id="navbar" class="navbar sticky-top">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./Logo/logo_small.png" alt="png/img">
+                        </a>
+                    </div>
+                    <div class="topSearch">
+                        <div class="nav-link float-start search-container">
+                            <form action="index.html" method="get">
+                                <input class="search expandRight" id="searchright" type="search" name="q"
+                                    placeholder="অনুসন্ধান">
+                                <label class="searchButton" for="searchright">
+                                    <img src="./Icon/topSearch.png" alt="search/png">
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="nav-link float-start">
+                            <div class="signInBtn rounded-pill">
+                                <form class="example" action="./login.html">
+                                    <button class="signInButton rounded-pill" type="submit">
+                                        <span>Sign in</span>
+                                    </button>
+                                </form>
+                            </div> <!-- signInBtn end -->
+                        </div>
+
+                    </div><!-- navMenu close-->
+                </div>
+            </nav><!-- =================== navbar end  =================== -->
+            <div class="container">
+                <div class="admittedClass submitCard mx-auto">
+
+                    <h2 class="mx-auto">তুমি পাঠশালায় যে ক্লাসের অনুশীলনী এবং পাঠে মনোযোগ দিতে চাও</h2>
+
+                    <form action="./selectBirthday.html" id="submit">
+                        <div>
+                            <div type="submit" role="button" onclick="document.getElementById('submit').submit();"
+                                class="admit">
+                                <a class="float-center">অষ্টম</a>
+                                <i class="float-end fa-solid fa-check"></i>
+                            </div>
+                            <div type="submit" role="button" onclick="document.getElementById('submit').submit();"
+                                class="admit">
+                                <a class="float-center">নবম</a>
+                                <i class="float-end fa-solid fa-check"></i>
+                            </div>
+                            <div type="submit" role="button" onclick="document.getElementById('submit').submit();"
+                                class="admit">
+                                <a class="float-center">দশম</a>
+                                <i class="float-end fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </header> <!-- ================ header area end ================= -->
+
+
+
+    <div id="footer"></div>
+
+    <!--=====JavaScript & jQuery file including area start======-->
+    <script src="./js/main.js"></script> <!-- bootstrap mainJs file  -->
+    <script src="./js/bootstrap.js"></script> <!-- bootstrap Js file  -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+    <!----jquery for counting---->
+    <script src="./jQuery/jquery.counterup.min.js"></script>
+    <script src="./js/waypoint.count.js"></script>
+    <!----jquery for counting---->
+</body>
+
+</html>

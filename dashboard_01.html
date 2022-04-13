@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mainul Hasan Khan">
+    <title>OnnoRokom Pathshala | Home</title>
+    <link rel="icon" href="./img/onnorokomPathshala_icon.png">
+    <link rel="stylesheet" href="./css/all.css"> <!-- fontAwesome css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.css"> <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/login.css"> <!-- login releated stylesheet -->
+    <link rel="stylesheet" href="./css/dashboard.css"> <!-- dashboard stylesheet -->
+    <link rel="stylesheet" href="./css/responsive.css"> <!-- my responsive stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link href="http://fonts.cdnfonts.com/css/typo-round" rel="stylesheet"> -->
+
+    <!-- OnnoRokom Pathshala project font -->
+    <script src="./jQuery/jquery.count.min.js"></script>
+    <!----jquery for counting---->
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar sticky-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./Logo/logo_small.png" alt="png/img">
+                    </a>
+                </div>
+                <div class="topSearch">
+                    <div class="nav-link float-start search-container">
+                        <form action="index.html" method="get">
+                            <input class="search expandRight" id="searchright" type="search" name="q"
+                                placeholder="অনুসন্ধান">
+                            <label class="searchButton" for="searchright">
+                                <img src="./Icon/topSearch.png" alt="search/png">
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="nav-link float-start userProfile">
+                        <form class="" action="./login.html">
+                            <img src="./Icon/userProfile.png" alt="user/png">
+                        </form>
+                    </div>
+
+                </div><!-- navMenu close-->
+            </div>
+        </nav><!-- =================== navbar end  =================== -->
+    </header> <!-- ================ header area end ================= -->
+    <div>
+        <div class="row container mx-auto">
+            <div class="col-8 mx-auto">
+                <div class="dashContainer">
+                    <section class="dashHeader">
+                        <p class="display-3">পড়ন্ত বিকেল</p>
+                        <h1>সময়কে কাজে লাগাও</h1>
+                        <span class="display-3">Afriedi Hasan Morad</span>
+                        <div class="suggestionBar">
+                            <div class="title paragraphText">Pinned to</div>
+                            <div class="subtitle paragraphText">Watch Next Time</div>
+                            <div preload="auto">
+                                <iframe width="709" height="398" src="https://www.youtube.com/embed/6jl5SBb2aAY"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="subjectSelection">
+                        <div class="sectionTitle">পাঠশালায় তোমার পাঠের বিষয়</div>
+
+                        <form class="subjects mx-auto" action="./video.html" id="submit">
+                            <div class="col selectSubject" type="submit" role="button"
+                                onclick="document.getElementById('submit').submit();">
+                                <img src="./Icon/physics.png" alt="physics/png">
+                                <br>
+                                <span>পদার্থ</span>
+                            </div>
+                            <div class="col selectSubject" type="submit" role="button"
+                                onclick="document.getElementById('submit').submit();">
+                                <img src="./Icon/math.png" alt="physics/png">
+                                <br>
+                                <span>গণিত</span>
+                            </div>
+                            <div class="col selectSubject" type="submit" role="button"
+                                onclick="document.getElementById('submit').submit();">
+                                <img src="./Icon/chemistry.png" alt="physics/png">
+                                <br>
+                                <span>রসায়ন</span>
+                            </div>
+                            <div class="col selectSubject" type="submit" role="button"
+                                onclick="document.getElementById('submit').submit();">
+                                <img src="./Icon/biology.png" alt="physics/png">
+                                <br>
+                                <span>জীববিজ্ঞান</span>
+                            </div>
+                            <div class="col selectSubject" type="submit" role="button"
+                                onclick="document.getElementById('submit').submit();">
+                                <img src="./Icon/english.png" alt="physics/png">
+                                <br>
+                                <span>English</span>
+                            </div>
+
+                        </form>
+                    </section>
+
+                    <section class="studyIncrease">
+                        <div>
+                            <div class="sectionTitle w-75 float-start">পাঠের উন্নতি</div>
+                            <div class="category w-25 float-end me-0">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <select class="selectMonth rounded-3">
+                                    <option class="placeHolder" disabled selected hidden> Weekly
+                                    </option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="sectionSubtitle d-inline-block">ভিডিও টেনে দেখলে নিজের পায়ে কুড়াল</div>
+
+                        <div class="increaseVolume">
+                            <div class="volumeBorder phy">
+                                <img src="./Icon/physics.png" alt="icon/png">
+                                <p class="paragraphText">পদার্থবিজ্ঞান</p>
+                                <div class="skills physics"> <span>90%</span></div>
+                            </div>
+                            <div class="volumeBorder mat">
+                                <img src="./Icon/math.png" alt="icon/png">
+                                <p class="paragraphText">গণিত</p>
+                                <div class="skills math"> <span>50%</span></div>
+                            </div>
+                            <div class="volumeBorder che">
+                                <img src="./Icon/chemistry.png" alt="icon/png">
+                                <p class="paragraphText">রসায়ন</p>
+                                <div class="skills chemistry"> <span>100%</span></div>
+                            </div>
+                            <div class="volumeBorder bio">
+                                <img src="./Icon/biology.png" alt="icon/png">
+                                <p class="paragraphText">জীববিজ্ঞান</p>
+                                <div class="skills biology"> <span>75%</span></div>
+                            </div>
+
+
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+
+            <div class="col-4">
+                <div class="dashSidebar">
+                    <p class="sectionTitle">আগে যে পাঠে ছিলে</p>
+                    <p class="sectionSubtitle">সেখান থেকে আবার শুরু করো</p>
+
+                    <div class="selectedPlaylist">
+
+                        <div class="card">
+                            <img class="card-img-top" src="./img/chemistry.png" alt="Card image">
+                            <button class="active"><i class="fa-solid fa-play"></i></button>
+
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <p class="card-title float-start">রসায়ন</p>
+                                    <h4 class="card-title float-end">
+                                        <img src="./Icon/clockPink.png" alt="clock/png">
+                                        <span class="pt-1">17:30 min</span>
+                                    </h4>
+                                </div>
+
+                                <h3 class="card-text">Mol | মোল | OnnoRokom Pathshala&#8228;&#8229;</h3>
+                                <hr>
+                                <p class="card-text">
+                                    <span class="float-start">ভার্সিটি 'ক'</span>
+                                    <span class="qty float-end">2,526,471 Views</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="./img/math.png" alt="Card image">
+                            <button class="active"><i class="fa-solid fa-play"></i></button>
+                            <div class="card-body">
+
+                                <div class="clearfix">
+                                    <p class="card-title float-start">গণিত</p>
+                                    <h4 class="card-title float-end">
+                                        <img src="./Icon/clockPink.png" alt="clock/png">
+                                        <span class="pt-1">06:30 min</span>
+                                    </h4>
+                                </div>
+
+                                <h3 class="card-text">Geometric Explanations of
+                                    Algebraic Formulas - Part 07 &#8228;&#8229;</h3>
+                                <hr>
+                                <p class="card-text">
+                                    <span class="float-start">অষ্টম</span>
+                                    <span class="qty float-end">2,526 Views</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+
+                            <div id="banner-video" preload="auto" loop>
+                                <iframe width="391" height="197" src="https://www.youtube.com/embed/6jl5SBb2aAY"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <button class="active"><i class="fa-solid fa-play"></i></button>
+
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <p class="card-title float-start">পদার্থবিজ্ঞান</p>
+                                    <h4 class="card-title float-end">
+                                        <img src="./Icon/clockPink.png" alt="clock/png">
+                                        <span class="pt-1">37:30 min</span>
+                                    </h4>
+                                </div>
+
+                                <h3 class="card-text">Relation between Mass and Energy
+                                    | ভর ও শক্তির সম্পর্ক &#8228;&#8229;</h3>
+                                <hr>
+                                <p class="card-text">
+                                    <span class="float-start">ইঞ্জিনিয়ারিং</span>
+                                    <span class="qty float-end">2,526,76 Views</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer"></div>
+    </div>
+
+    <!--=====JavaScript & jQuery file including area start======-->
+    <script src="./js/main.js"></script> <!-- bootstrap mainJs file  -->
+    <script src="./js/bootstrap.js"></script> <!-- bootstrap Js file  -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+    <!----jquery for counting---->
+    <script src="./jQuery/jquery.counterup.min.js"></script>
+    <script src="./js/waypoint.count.js"></script>
+    <!----jquery for counting---->
+</body>
+
+</html>

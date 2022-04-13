@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mainul Hasan Khan">
+    <title>OnnoRokom Pathshala | Home</title>
+    <link rel="icon" href="./img/onnorokomPathshala_icon.png">
+    <link rel="stylesheet" href="./css/all.css"> <!-- fontAwesome css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.css"> <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- my stylesheet -->
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/responsive.css"> <!-- my responsive stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link href="http://fonts.cdnfonts.com/css/typo-round" rel="stylesheet"> -->
+
+    <!-- OnnoRokom Pathshala project font -->
+    <script src="./jQuery/jquery.count.min.js"></script>
+    <!----jquery for counting---->
+</head>
+
+<body>
+    <header>
+        <section class="loginArea">
+            <nav id="navbar" class="navbar sticky-top">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./Logo/logo_small.png" alt="png/img">
+                        </a>
+                    </div>
+                    <div class="topSearch">
+                        <div class="nav-link float-start search-container">
+                            <form action="index.html" method="get">
+                                <input class="search expandRight" id="searchright" type="search" name="q"
+                                    placeholder="অনুসন্ধান">
+                                <label class="searchButton" for="searchright">
+                                    <img src="./Icon/topSearch.png" alt="search/png">
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="nav-link float-start">
+                            <div class="signInBtn rounded-pill">
+                                <form class="example" action="./login.html">
+                                    <button class="signInButton rounded-pill" type="submit">
+                                        <span>Sign in</span>
+                                    </button>
+                                </form>
+                            </div> <!-- signInBtn end -->
+                        </div>
+
+                    </div><!-- navMenu close-->
+                </div>
+            </nav><!-- =================== navbar end  =================== -->
+            <div class="container">
+                <div class="selectBirthday submitCard mx-auto">
+
+                    <form action="./newPassword.html" id="submit" class="">
+                        <h2 class="mx-auto">জন্ম তারিখ</h2>
+
+                        <div class="col-md p-4 d-inline-block">
+                            <select class="selectMonth rounded-3">
+                                <option class="placeHolder" disabled selected hidden> Month
+                                </option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>Jun</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                            <select class="selectDay rounded-3">
+                                <option class="placeHolder" disabled selected hidden> Day
+                                </option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <select class="selectYear rounded-3">
+                                <option class="placeHolder" disabled selected hidden>Year</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                            </select>
+                            
+                        </div>
+                        <div class=" d-inline-block">
+                            <i class="float-end fa-solid fa-check" type="submit" role="button"
+                                onclick="document.getElementById('submit').submit();"></i>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </header> <!-- ================ header area end ================= -->
+
+
+
+    <div id="footer"></div>
+
+    <!--=====JavaScript & jQuery file including area start======-->
+    <script src="./js/main.js"></script> <!-- bootstrap mainJs file  -->
+    <script src="./js/bootstrap.js"></script> <!-- bootstrap Js file  -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+    <!----jquery for counting---->
+    <script src="./jQuery/jquery.counterup.min.js"></script>
+    <script src="./js/waypoint.count.js"></script>
+    <!----jquery for counting---->
+</body>
+
+</html>

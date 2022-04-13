@@ -1,0 +1,600 @@
+.banner .headTxt {
+    z-index: 0;
+}
+
+
+/* ----------common responsive css end----------- */
+
+
+/* ========= phone =  480px | sm applies to x-small devices (portrait phones, less than 576px) ========= */
+@media (min-width: 320px) and (max-width: 575px) {
+
+    .container {
+        width: 98%;
+    }
+
+    .banner {
+        height: 393px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .banner a img {
+        width: 50%;
+        margin-top: 1px;
+    }
+
+    .topSearch .searchButton img {
+        width: 55%;
+        float: right;
+        margin-top: -1.1rem;
+
+    }
+
+    .search-container {
+        font-size: 1rem;
+    }
+
+    .search:focus {
+        width: 16.5rem;
+        height: 2rem;
+        margin-top: -.2rem;
+    }
+
+    .search {
+        height: 2rem;
+    }
+
+    .banner .signInBtn button {
+        width: 5.6rem;
+        height: 1.9rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: 'Hind Siliguri', sans-serif;
+        margin-left: -34px;
+    }
+
+    .banner .row h1 {
+        font-size: 2.1rem;
+        width: 300px;
+        height: 34px;
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
+
+    .banner .row h2 {
+        font-size: 2rem;
+        width: 300px;
+        height: 34px;
+        margin-bottom: 4rem;
+    }
+
+    .banner .regButton {
+        width: 95px;
+        height: 25px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .banner .headTxt {
+        z-index: 1;
+    }
+
+    .banner .pathshalaImg img {
+        float: right;
+        width: 40%;
+        top: 7rem;
+        left: 17rem;
+        z-index: 0;
+        position: absolute;
+    }
+
+
+    .classSelection .classSelectionHeader {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .classSelection .class .selectClass {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .display-4 {
+        font-size: 24px;
+        margin-bottom: 0px;
+        padding: 0 0;
+    }
+
+    .playlist button {
+        width: 9.7rem;
+        height: 2.4rem;
+        font-size: 1.1rem;
+        font-family: Typo Round Regular Demo Regular;
+        line-height: 5px;
+    }
+
+
+    .classSelection .class .selectClass img {
+        width: 31px;
+        height: 37px;
+        margin-bottom: 0rem;
+    }
+
+    .selectedVideo {
+        margin-top: 0rem;
+    }
+
+    .selectedVideoHeader {
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+    }
+
+    .selectedPlaylist .card {
+        margin-top: 2.11rem;
+    }
+
+    .selectedPlaylist {
+        top: 0rem;
+        margin-bottom: 8rem;
+    }
+
+    .selectedPlaylist .card {
+        top: 3rem;
+        width: 321px;
+        height: 369px;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        border: none;
+        align-items: center;
+        box-shadow: 0px 0px 2rem #D9DCE3;
+    }
+
+    .selectedPlaylist .card img {
+        width: 32.1rem;
+    }
+
+    .selectedPlaylist .card iframe {
+        width: 31rem;
+    }
+
+    .selectedPlaylist .card #banner-video {
+        width: 33.1rem;
+    }
+
+    .selectedPlaylist .card .card-body {
+        width: 298px;
+    }
+
+    .selectedPlaylist .card .card-body h2 {
+        font-size: 2.3rem;
+    }
+
+    .selectedPlaylist .card .card-body h4 span {
+        font-size: 1.2rem;
+    }
+
+    .selectedPlaylist .card .card-body h3 {
+        font-size: 1.8rem;
+    }
+
+    .recentlyAdded .headerTop {
+        min-width: 200px;
+    }
+
+    .recentlyAdded {
+        margin-bottom: 0rem;
+    }
+
+    .recentlyAddedHeader {
+        margin-top: 7rem;
+        margin-bottom: 0rem;
+    }
+
+    .recentPlaylist .card {
+        margin-left: 15rem;
+        margin-top: 2rem;
+    }
+
+    .recentPlaylist .card {
+        margin-bottom: 3rem;
+    }
+
+    .pathshalaActivity {
+        height: 45rem;
+    }
+
+    .pathshalaActivity .content .iconImg {
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+
+    .pathshalaActivity .content .iconImg img {
+        padding: 1rem;
+        align-items: center;
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+
+
+    .pathshalaActivity .content .display-5 {
+        font-size: 20px;
+    }
+
+    .pathshalaActivity .content .outline {
+        font-size: 20px;
+    }
+
+    .pathshalaActivity .content {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .pathshalaActivity .header {
+        padding: 2rem 0rem 1rem 0;
+        background-color: #fff;
+    }
+
+    footer {
+        margin-top: 4.6rem;
+        height: auto;
+        background: transparent linear-gradient(180deg, #762A82 0%, #9A245F 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .footer .contactDetails {
+        width: 50%;
+    }
+
+    .contactDetails h2 {
+        font-size: 1.8rem;
+    }
+
+    .contactDetails .footerLogo img {
+        width: 95%;
+    }
+
+    .contactDetails ul li a {
+        font-size: 1.4rem;
+    }
+
+    .contactDetails .socialIcon a i {
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .copyright {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        border-top: 2px solid #A7608F;
+    }
+
+    .copyright h3 {
+        font-size: 1.8rem;
+    }
+
+    .copyright h4 {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* ========= phn + tab = 720px | md applies to small devices (landscape phones, less than 768px) ========= */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        width: 55rem;
+    }
+
+
+    .search:focus {
+        width: 25rem;
+    }
+
+    .search-container {
+        position: relative;
+        display: inline-block;
+        font-size: large;
+        margin-right: -.5rem;
+    }
+
+    .banner .row h1 {
+        margin-bottom: -8rem;
+    }
+
+    .banner .row h2 {
+        font-size: 2.5rem;
+        width: 60%;
+    }
+
+    .banner .pathshalaImg img {
+        width: 50%;
+        margin: 0rem;
+        top: 45rem;
+        left: 10rem;
+    }
+
+    .banner .headTxt {
+        z-index: 1;
+    }
+
+    .banner .row h1 {
+        width: 50rem;
+    }
+
+    .banner .headTxt h1 br {
+        display: none;
+    }
+
+    .banner .row h1 {
+        font-size: 3rem;
+    }
+
+    .banner .pathshalaImg img {
+        margin-top: -45%;
+        margin-left: 15rem;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .display-4 {
+        font-size: 24px;
+        margin-bottom: 0px;
+        padding: 0 0;
+    }
+
+    .playlist button {
+        width: 9.7rem;
+        height: 2.4rem;
+        font-size: 1.1rem;
+        font-family: Typo Round Regular Demo Regular;
+        line-height: 5px;
+    }
+
+    .classSelection .classSelectionHeader {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .classSelection .class .selectClass {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .selectedVideoHeader {
+        margin-top: 6rem;
+        margin-bottom: 0rem;
+    }
+
+    .selectedPlaylist .card {
+        margin-top: 2.11rem;
+    }
+
+    .recentlyAdded {
+        margin-bottom: 0rem;
+    }
+
+    .recentlyAddedHeader {
+        margin-top: 7rem;
+        margin-bottom: 0rem;
+    }
+
+    .recentPlaylist .card {
+        margin-left: 15rem;
+        margin-top: 2rem;
+    }
+
+    .recentPlaylist .loadMore button {
+        margin-top: 10rem;
+        margin-bottom: 0rem;
+    }
+
+    .pathshalaActivity .header {
+        padding: 5rem 0 10rem 0;
+    }
+
+    .pathshalaActivity .content .iconImg {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .pathshalaActivity .content .iconImg img {
+        padding: 0rem;
+        margin-top: 2.1rem;
+        width: 60%;
+    }
+
+    .pathshalaActivity .content {
+        margin-bottom: 5rem;
+    }
+
+    .pathshalaActivity .content .display-5 {
+        font-size: 3rem;
+    }
+
+    .pathshalaActivity .content .outline {
+        font-size: 2rem;
+    }
+
+    footer {
+        height: auto;
+        background: transparent linear-gradient(180deg, #762A82 0%, #9A245F 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .footer .contactDetails {
+        width: 50%;
+    }
+
+    .copyright {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        border-top: 2px solid #A7608F;
+    }
+
+    /*--------Login page media query--------*/
+
+    .loginArea {
+        width: 90%;
+        height: 85.956rem;
+        background-size: cover;
+    }
+
+
+
+
+
+}
+
+
+/* ========== tablet =  960px | lg applies to medium devices (tablets, less than 992px) ========== */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 76rem;
+    }
+
+    .display-4 {
+        font-size: 4.5rem;
+    }
+
+    .search:focus {
+        width: 35rem;
+        padding: 0 1.6rem 0 0;
+    }
+
+    .banner .row h2 {
+        padding-top: 6rem;
+    }
+
+    .banner .regButton {
+        margin-top: 8rem;
+    }
+
+    .banner .pathshalaImg img {
+        overflow-x: auto;
+        float: right;
+        margin-top: -45rem;
+    }
+
+    .classSelection .class .selectClass {
+        font-size: 1.5rem;
+        line-height: 4rem;
+    }
+
+    .selectedPlaylist .card {
+        width: 45%;
+    }
+
+    .selectedPlaylist .card button {
+        top: 45%;
+        left: 43%;
+    }
+
+    .selectedPlaylist .card img {
+        width: 100%;
+    }
+
+    .selectedPlaylist .card iframe {
+        width: 31.8rem;
+        margin: auto;
+    }
+
+    .selectedPlaylist .card #banner-video {
+        width: 31rem;
+    }
+
+    .selectedPlaylist .card .card-body {
+        width: 95%;
+    }
+
+    .copyright {
+        margin-top: auto;
+    }
+
+    .recentlyAdded {
+        margin-top: 9rem;
+    }
+
+    .recentPlaylist .card {
+        margin-bottom: 7rem;
+    }
+
+    .pathshalaActivity .content .display-5 {
+        font-size: 3rem;
+    }
+
+    footer {
+        height: auto;
+        background: transparent linear-gradient(180deg, #762A82 0%, #9A245F 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .footer .contactDetails {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+
+    .contactDetails .socialIcon a i {
+        padding: .5rem;
+        font-size: 2.5rem;
+    }
+
+    .copyright {
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+
+}
+
+/* ========== desktop | xl applies to large devices (desktops, less than 1200px) ========== */
+@media (min-width: 992px) and (max-width: 1199px) {
+    html {
+        font-size: 70%;
+    }
+
+    .container {
+        width: 90rem;
+    }
+
+    .display-4 {
+        font-size: 4.5rem;
+    }
+
+    .banner .pathshalaImg img {
+        overflow-x: auto;
+        float: right;
+        margin: 5rem 0 0 -15rem;
+    }
+
+    .selectedVideo {
+        margin-top: 15rem;
+    }
+
+    .recentlyAdded {
+        margin-top: 9rem;
+    }
+
+
+    /*  .pathshalaActivity .content .iconImg {
+        margin-left: 3rem;
+    } */
+
+    .pathshalaActivity .content .display-5 {
+        font-size: 3.8rem;
+    }
+
+    .footerArea .contactDetails h2 {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+}
+
+/* ========== desktop | xxl applies to x-large devices (large desktops, less than 1400px) ========== */
+@media (max-width: 1399.98px) {
+
+    /* design container width 1110px */
+}
