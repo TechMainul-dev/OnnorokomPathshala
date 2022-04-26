@@ -10,6 +10,7 @@
     <link rel="icon" href="./img/onnorokomPathshala_icon.png">
     <link rel="stylesheet" href="./css/all.css"> <!-- fontAwesome css file  -->
     <link rel="stylesheet" href="./css/bootstrap.css"> <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- my stylesheet -->
     <link rel="stylesheet" href="./css/login.css"> <!-- login releated stylesheet -->
     <link rel="stylesheet" href="./css/dashboard.css"> <!-- dashboard stylesheet -->
     <link rel="stylesheet" href="./css/responsive.css"> <!-- my responsive stylesheet -->
@@ -23,9 +24,10 @@
 </head>
 
 <body>
-    <header>
+
+    <div class="dashboardHome">
         <nav id="navbar" class="navbar sticky-top">
-            <div class="container">
+            <div class="container container-mobile">
                 <div class="logo">
                     <a href="index.html">
                         <img src="./Logo/logo_small.png" alt="png/img">
@@ -41,20 +43,19 @@
                             </label>
                         </form>
                     </div>
-
-                    <div class="nav-link float-start userProfile">
-                        <form class="" action="./login.html">
-                            <img src="./Icon/userProfile.png" alt="user/png">
-                        </form>
+                    <div class="userProfile float-end">
+                        <img src="./Icon/userProfile.png" alt="user/png">
                     </div>
 
                 </div><!-- navMenu close-->
             </div>
-        </nav><!-- =================== navbar end  =================== -->
-    </header> <!-- ================ header area end ================= -->
-    <div>
-        <div class="row container mx-auto">
-            <div class="col-8 mx-auto">
+        </nav>
+        <!--=================== navbar end  ===================-->
+
+
+
+        <div class="row container mx-auto dashboard">
+            <div class="col col-xl-8">
                 <div class="dashContainer">
                     <section class="dashHeader">
                         <p class="display-3">পড়ন্ত বিকেল</p>
@@ -64,8 +65,8 @@
                             <div class="title paragraphText">Pinned to</div>
                             <div class="subtitle paragraphText">Watch Next Time</div>
                             <div preload="auto">
-                                <iframe width="709" height="398" src="https://www.youtube.com/embed/6jl5SBb2aAY"
-                                    title="YouTube video player" frameborder="0"
+                                <iframe src="https://www.youtube.com/embed/6jl5SBb2aAY" title="YouTube video player"
+                                    frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
@@ -75,37 +76,41 @@
                     <section class="subjectSelection">
                         <div class="sectionTitle">পাঠশালায় তোমার পাঠের বিষয়</div>
 
-                        <form class="subjects mx-auto" action="./video.html" id="submit">
+                        <form class="subjects" action="./video.html" id="submit">
+
+
                             <div class="col selectSubject" type="submit" role="button"
                                 onclick="document.getElementById('submit').submit();">
                                 <img src="./Icon/physics.png" alt="physics/png">
                                 <br>
-                                <span>পদার্থ</span>
+                                <h3>পদার্থ</h3>
                             </div>
                             <div class="col selectSubject" type="submit" role="button"
                                 onclick="document.getElementById('submit').submit();">
                                 <img src="./Icon/math.png" alt="physics/png">
                                 <br>
-                                <span>গণিত</span>
+                                <h3>গণিত</h3>
                             </div>
                             <div class="col selectSubject" type="submit" role="button"
                                 onclick="document.getElementById('submit').submit();">
                                 <img src="./Icon/chemistry.png" alt="physics/png">
                                 <br>
-                                <span>রসায়ন</span>
+                                <h3>রসায়ন</h3>
                             </div>
                             <div class="col selectSubject" type="submit" role="button"
                                 onclick="document.getElementById('submit').submit();">
                                 <img src="./Icon/biology.png" alt="physics/png">
                                 <br>
-                                <span>জীববিজ্ঞান</span>
+                                <h3>জীববিজ্ঞান</h3>
                             </div>
                             <div class="col selectSubject" type="submit" role="button"
                                 onclick="document.getElementById('submit').submit();">
                                 <img src="./Icon/english.png" alt="physics/png">
                                 <br>
-                                <span>English</span>
+                                <h3>English</h3>
                             </div>
+
+
 
                         </form>
                     </section>
@@ -160,7 +165,7 @@
 
 
 
-            <div class="col-4">
+            <div class="col col-xl-4">
                 <div class="dashSidebar">
                     <p class="sectionTitle">আগে যে পাঠে ছিলে</p>
                     <p class="sectionSubtitle">সেখান থেকে আবার শুরু করো</p>
@@ -168,8 +173,11 @@
                     <div class="selectedPlaylist">
 
                         <div class="card">
-                            <img class="card-img-top" src="./img/chemistry.png" alt="Card image">
-                            <button class="active"><i class="fa-solid fa-play"></i></button>
+                            <div class="selectedVideoImg selectedChemistry">
+                                <span class="hoverCard-body">ভার্সিটি 'ক'</span>
+
+                                <button class="active"><i class="fa-solid fa-play"></i></button>
+                            </div>
 
                             <div class="card-body">
                                 <div class="clearfix">
@@ -190,10 +198,12 @@
                         </div>
 
                         <div class="card">
-                            <img class="card-img-top" src="./img/math.png" alt="Card image">
-                            <button class="active"><i class="fa-solid fa-play"></i></button>
-                            <div class="card-body">
+                            <div class="selectedVideoImg selectedMath">
+                                <span class="hoverCard-body">অষ্টম</span>
+                                <button class="active"><i class="fa-solid fa-play"></i></button>
+                            </div>
 
+                            <div class="card-body">
                                 <div class="clearfix">
                                     <p class="card-title float-start">গণিত</p>
                                     <h4 class="card-title float-end">
@@ -214,13 +224,10 @@
 
                         <div class="card">
 
-                            <div id="banner-video" preload="auto" loop>
-                                <iframe width="391" height="197" src="https://www.youtube.com/embed/6jl5SBb2aAY"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                            <div class="selectedVideoImg selectedEng">
+                                <span class="hoverCard-body">ইঞ্জিনিয়ারিং</span>
+                                <button class="active"><i class="fa-solid fa-play"></i></button>
                             </div>
-                            <button class="active"><i class="fa-solid fa-play"></i></button>
 
                             <div class="card-body">
                                 <div class="clearfix">
@@ -245,10 +252,11 @@
                 </div>
             </div>
         </div>
-
-
-        <div id="footer"></div>
     </div>
+
+
+    <div id="footer"></div>
+
 
     <!--=====JavaScript & jQuery file including area start======-->
     <script src="./js/main.js"></script> <!-- bootstrap mainJs file  -->

@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <section class="loginArea">
+        <section class="selectBirthdayArea loginArea banner">
             <nav id="navbar" class="navbar sticky-top">
                 <div class="container">
                     <div class="logo">
@@ -37,7 +37,7 @@
                             <form action="index.html" method="get">
                                 <input class="search expandRight" id="searchright" type="search" name="q"
                                     placeholder="অনুসন্ধান">
-                                <label class="searchButton" for="searchright">
+                                <label class="searchButton me-1" for="searchright">
                                     <img src="./Icon/topSearch.png" alt="search/png">
                                 </label>
                             </form>
@@ -56,11 +56,11 @@
                     </div><!-- navMenu close-->
                 </div>
             </nav><!-- =================== navbar end  =================== -->
-            <div class="container">
-                <div class="selectBirthday submitCard mx-auto">
+            <div class="container registerBGHeight">
+                <div class="selectBirthday loginCard submitCard">
 
+                    <h2 class="mx-auto">জন্ম তারিখ</h2>
                     <form action="./newPassword.html" id="submit" class="">
-                        <h2 class="mx-auto">জন্ম তারিখ</h2>
 
                         <div class="col-md p-4 d-inline-block">
                             <select class="selectMonth rounded-3">
@@ -131,9 +131,9 @@
                                 <option>2014</option>
                                 <option>2015</option>
                             </select>
-                            
+
                         </div>
-                        <div class=" d-inline-block">
+                        <div class="d-inline-block">
                             <i class="float-end fa-solid fa-check" type="submit" role="button"
                                 onclick="document.getElementById('submit').submit();"></i>
                         </div>

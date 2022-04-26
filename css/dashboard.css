@@ -1,17 +1,30 @@
+@font-face {
+    font-family: 'Typo Round Regular Demo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typo Round Regular Demo Regular'), url('../webfonts/Typo_Round_Regular_Demo.woff') format('woff');
+}
+
+.dashboardHome .navbar .search-container .search {
+    margin-top: -.28rem;
+}
+
 .dashContainer {
-    width: 70.9rem;
-    height: 50rem;
+    /* width: 70.9rem; */
+    /* height: 50rem; */
     display: inline-block;
     margin: auto;
-    margin-top: 14.1rem;
+    margin-top: 7.1rem;
+    text-align: left;
 }
 
 .dashSidebar {
-    width: 35.1rem;
-    height: 30rem;
+    /* width: 35.1rem; */
+    /* height: 30rem; */
     display: inline-block;
     margin: auto;
-    margin-top: 15.1rem;
+    top: 0rem;
+    margin-top: -20rem;
 }
 
 .dashHeader .display-3 {
@@ -27,14 +40,15 @@
 
 .sectionTitle {
     font-size: 3.6rem;
-    font-family: 'Typo Round Bold Demo Regular';
+    font-family: 'Typo Round Bold Demo Regular', 'Hind Siliguri';
+    font-weight: bold;
 }
 
 .sectionSubtitle {
     font-size: 3rem;
 }
 
-.h3 {
+h3 {
     font-size: 2.6rem;
 }
 
@@ -64,6 +78,10 @@ time {
 
 /* ==============dashboard_01 CSS start=============== */
 /* -----------dashHeader section css start----------- */
+.dashHeader .suggestionBar iframe {
+    width: 95%;
+    height: 398px;
+}
 
 .dashHeader p {
     color: #802978;
@@ -87,37 +105,35 @@ time {
     margin-bottom: 2.3rem;
 }
 
-.subjectSelection .subjects {
-    margin: 0;
-    text-align: center;
-
-}
-
-.subjectSelection .subjects .selectSubject {
+.subjectSelection .selectSubject {
     width: 16.2rem;
     height: 16.2rem;
     color: rgb(0, 0, 0);
-    font-size: 2.6rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #24415D4D;
     border-radius: 10%;
     display: inline-block;
-    margin-top: 1.4rem;
-    margin-right: 1.2rem;
+    margin: .6rem;
+    text-align: center;
 }
 
-.subjectSelection .subjects .selectSubject:hover {
+.subjectSelection .selectSubject:hover {
     background: transparent linear-gradient(180deg, #9A6FE8 0%, #492092 100%);
     color: #fff;
-    box-shadow: 0px 0px 20px #f10d054d;
     transition: all linear .4s;
 }
 
-.subjectSelection .subjects .selectSubject img {
+.subjectSelection .selectSubject img {
     width: 6.8rem;
     height: 6.8rem;
     margin-top: 1.3rem;
     margin-bottom: 2.6rem;
+}
+
+.subjectSelection .selectSubject h3 {
+    font-size: 2.6rem;
+    height: 5rem;
+    margin-bottom: 0;
 }
 
 /* -------------subject section css end------------- */
@@ -225,6 +241,7 @@ time {
 
 .studyIncrease .increaseVolume .che .skills span {
     border: .5rem solid #DE62FA;
+    padding: .55rem 0rem;
 }
 
 .studyIncrease .increaseVolume .che .chemistry {
@@ -250,6 +267,37 @@ time {
 }
 
 /* -------------studyIncrease section css end------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------previousStudyList section css start------------- */
+
+.dashSidebar .sectionTitle {
+    color: #802978;
+    text-align: left;
+}
+
+.dashSidebar .sectionSubtitle {
+    margin-bottom: 4.5rem;
+    text-align: left;
+}
+
+.dashSidebar .selectedPlaylist .card button {
+    margin-top: -28px;
+}
+
+.dashSidebar .selectedPlaylist .card button .fa-play {
+    margin: 0;
+    border: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* -------------previousStudyList section css end------------- */
 
 /* =============dashboard_01 CSS end============= */
 /* ============================================== */
@@ -267,13 +315,22 @@ time {
     background-size: cover;
 }
 
+.bg .navbar .search-container .searchButton {
+    margin-top: 0.3rem;
+}
+
+.bg .navbar .search-container .search {
+    margin-top: 0rem;
+}
+
 .videoPage {
     margin-top: 8rem;
     background-color: #fff;
+    border: 2px solid #aaa;
 }
 
 .videoPageContainer {
-    width: 74.8rem;
+    width: 68%;
     margin: auto;
     padding-top: 6.4rem;
 }
@@ -286,7 +343,9 @@ time {
 }
 
 .videoPage .banner-video iframe {
-    margin: .5rem 0 0 1rem;
+    width: 98%;
+    height: 409px;
+    margin: .5rem 0 0 0rem;
 }
 
 .videoHead {
@@ -294,13 +353,22 @@ time {
 }
 
 .videoHead .headContent,
-.videoContent {
-    width: 51.4rem;
+.videoContent .videoDetails {
+    width: 70%;
     float: left;
 }
 
-.videoHead .headContent h1 {
+.videoPlaylistArea .videoPlaylist .videoContent .videoDetails h3 {
+    text-align: left;
+}
+
+.videoPlaylistArea .videoPlaylist .videoContent .videoDetails time {
+    float: left;
+}
+
+.videoHead .headContent .h1 {
     font-size: 3.4rem;
+    font-weight: normal;
     font-family: 'Hind Siliguri', sans-serif;
 }
 
@@ -308,16 +376,14 @@ time {
     font-weight: bold;
 }
 
-.videoHead .headIcon,
-.watchPercentage {
-    width: 19.3rem;
-    float: right;
-}
-
 .videoHead .headIcon img {
     float: right;
+    margin-left: 2rem;
 }
 
+.watchPercentage {
+    float: right;
+}
 
 hr {
     width: 100%;
@@ -343,12 +409,18 @@ hr {
 .watchPercentage {
     position: relative;
     text-align: center;
-    width: 55px;
+    width: 58px;
     height: 55px;
     margin-left: 0%;
     border-radius: 50%;
-    background-color: #E53B3B;
-    background-image: linear-gradient(162deg, transparent 50%, #f0f0f0 50%), linear-gradient(90deg, #f0f0f0 50%, transparent 50%);
+    background-color: #1A73E8;
+    background-image: linear-gradient(170deg, transparent 35%, #f0f0f0 35%), linear-gradient(90deg, #f0f0f0 10%, transparent 10%);
+}
+
+.watchPercentage .category {
+    font-size: 19px;
+    line-height: 4.5rem;
+    font-family: 'Typo Round Regular Demo Regular';
 }
 
 .videoPlaylistArea {
@@ -357,6 +429,10 @@ hr {
 
 .videoPageContainer form {
     text-align: center;
+}
+
+.videoPage .videoPageContainer button {
+    margin-bottom: 3rem;
 }
 
 /* =============videoPage CSS end============= */
@@ -381,29 +457,82 @@ hr {
 
 
 /* =============videoLessons CSS start=========== */
-.videoHead .h3,
-.videoContent h3 {
-    font-size: 2.6rem;
-    font-weight: bold;
-    color: black;
+.videoLessons .display-3 {
+    text-align: left;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+    margin-left: -.5%;
 }
 
+.videoLessons .headContent {
+    text-align: left;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+}
 
-
-.videoLessons .videoHead .headIcon select {
-    font-size: 2rem;
+.videoLessons .videoHead .headContent .h3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family: 'Typo Round Regular Demo Regular';
+    line-height: 6rem;
 }
 
 .videoLessons .videoHead .duration {
-    margin-left: 53%;
+    margin-bottom: -2rem;
+}
+
+.videoLessons .videoHead .duration i {
+    margin: auto;
+}
+
+.videoLessons .videoHead .duration .fa-video {
+    color: #DE1826;
+    margin-left: -2%;
+}
+
+.videoLessons .videoHead .duration .fa-clock-rotate-left {
+    color: #782A80;
 }
 
 .videoLessons .videoHead .headIcon select {
+    font-size: 2rem;
     float: right;
+    border: 1px solid white;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
 }
 
-.videoLoadMore {
-    margin-top: 15rem;
+.videoLessons .borderSpecial {
+    margin-left: -3rem;
+    margin-bottom: -1rem;
+    width: 110%;
+    border-bottom: 2px solid #707070;
+}
+
+.videoLessons .videoPlaylist .videoContent {
+    margin-top: 2rem;
+}
+
+.videoLessons .videoPlaylist .videoContent h3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family: 'Typo Round Regular Demo Regular';
+    text-align: left;
+    color: #792A7F;
+}
+
+.videoLessons .videoPlaylist .videoContent span {
+    font-size: 2.2rem;
+    margin: auto;
+    float: left;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.videoLessons .videoPlaylist .watchPercentage {
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+}
+
+.videoLessons .videoLoadMore {
+    margin-top: 7.34rem;
+    margin-bottom: 2.4rem;
     text-align: center;
 }
 
@@ -422,6 +551,9 @@ hr {
 /* =============questionBank CSS start=========== */
 
 
+.questionBank {
+    height: 93rem;
+}
 
 .questionBank .display-2 {
     font-size: 4.6rem;
@@ -429,40 +561,45 @@ hr {
 }
 
 .questionBank .subjects {
+    width: 90rem;
     height: auto;
     margin-top: 5rem;
-    margin-bottom: 50rem;
-    /* align-items: center; */
+    text-align: left;
 }
 
 .questionBank .selectSubject {
     width: 25.4rem;
-    height: 5.6rem;
-    background-color: #772D7E;
+    height: auto;
+    background: #FF4650;
     margin: 1rem;
-    float: left;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .questionBank .selectSubject:hover {
-    background: transparent linear-gradient(270deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
     transition: all linear 0.3s;
     box-shadow: .3rem .3rem .5rem #782A80;
 }
 
-.questionBank .selectSubject i {
-    float: right;
-    /* position: absolute; */
-    /* right: 0; */
-    background: #FF4650 0% 0% no-repeat padding-box;
-    border-radius: 5px;
-    padding: 1.5rem;
-    margin: 1px 0px auto auto;
-}
-
 .questionBank .selectSubject span {
+    width: 80%;
+    padding: 3px 0px 3px 6px;
     font-size: 3.3rem;
     color: #fff;
-    margin-left: 1rem;
+    float: left;
+    background-color: #772D7E;
+    border-radius: 5px;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+}
+
+.questionBank .selectSubject i {
+    float: right;
+    font-size: 5rem;
+    padding: .25rem .5rem;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0px -1px auto auto;
+    float: right;
 }
 
 /* =============questionBank CSS end=========== */
@@ -483,26 +620,19 @@ hr {
 
 /* =============videoPlaylistPage CSS start=========== */
 
-.videoPlaylistPage .videoListArea {
-    width: 35.1rem;
-    height: 50rem;
-    display: inline-block;
-    margin-top: 3.4rem;
-}
-
 .videoPlaylistPage .col-8 {
     box-shadow: 0px 0px 6px #00000029;
 }
 
 .videoPlaylistPage .playListContentArea {
-    width: 71rem;
+    width: 100%;
     height: auto;
     display: inline-block;
     margin-top: auto;
     background-color: #ffffff;
 }
 
-.display-1 {
+.vpPage .display-1 {
     font-size: 4.6rem;
     color: #3289F1;
     font-family: 'Typo Round Regular Demo Regular';
@@ -515,54 +645,81 @@ hr {
     color: #535353;
 }
 
-.videoListArea .card {
+.videoPlaylistPage .videoListArea .card {
+    width: 90%;
     border-radius: .5rem;
     font-size: 2.6rem;
 }
 
-.videoListArea .card ul li {
+.videoPlaylistPage .videoListArea li {
     line-height: 5rem;
     list-style-type: none;
     color: #535353;
     border-bottom: 1px solid #00000029;
+    box-shadow: 0px 0px 6px #58555529;
+}
+
+.videoPlaylistPage .videoListArea li span {
+    font-family: 'Typo Round Regular Demo Regular';
+    margin-left: 5%;
+}
+
+.videoPlaylistPage .addBtn span {
+    color: #762A82;
+    font-size: 2.6rem;
+    margin-left: 5%;
     font-family: 'Typo Round Regular Demo Regular';
 }
 
-.videoListArea .card .fa-plus {
+.videoPlaylistPage .videoListArea .addBtn .fa-plus {
     color: #762A82;
     font-size: 2rem;
     font-weight: bold;
-    padding: 0 .1rem;
+    padding: 0 0.2rem;
     border-radius: 50%;
     border: 2px solid #762A82;
 }
 
-.videoListArea .card ul li:hover {
+.videoPlaylistPage .videoListArea li:hover,
+.playListContent {
     color: #762A82;
-    background: #E3E3E3 0% 0% no-repeat padding-box;
+    background: #E3E3E3;
+    cursor: pointer;
     box-shadow: 0px 0px 6px #00000029;
+    transition: all linear 0.3s;
 }
 
-.videosList {
-    width: 68.234rem;
+.videoPlaylistPage .videosList {
+    width: 98%;
     height: 8rem;
     margin-top: 3rem;
     margin-left: 1.4rem;
+    color: #000000;
     border-bottom: 2px solid #00000029;
 }
 
-.videosList img {
+.videoPlaylistPage .videosList img {
     width: 9.6rem;
     height: 6.5rem;
     float: left;
 }
 
-.videosList p {
+.videoPlaylistPage .videosList p {
+    width: 70%;
     font-size: 2.5rem;
+    float: left;
+    margin-left: 2rem;
+    font-family: 'SolaimanLipi', sans-serif;
 }
 
-.videosList time {
+.videoPlaylistPage .videosList time {
     float: right;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.videoPlaylistPage .videoLoadMore {
+    /* float: none; */
+    text-align: center;
 }
 
 /* =============videoPlaylistPage CSS end=========== */
@@ -582,43 +739,35 @@ hr {
 
 
 /* =============Profile CSS start=========== */
-.profilePage .profileSidebar {
-    width: 35.1rem;
-    height: 50rem;
+.profilePage {
     margin-top: 10rem;
-    display: inline-block;
 }
 
-.profilePage .profileDetails {
-    width: 71rem;
-    height: auto;
-    top: 10rem;
-    display: inline-block;
-    margin-top: auto;
-    margin-bottom: 33.2rem;
+.profilePage .profileSidebar {
+    width: 100%;
+    margin-top: -35rem;
 }
 
 .profilePage .profileSidebar .profilePicture {
-    width: 35.1rem;
-    height: 28.5rem;
+    width: 100%;
+    align-items: center;
 }
 
 .profilePage .profileSidebar .profilePicture img {
     width: 14.8rem;
-    margin: 2.8rem auto 0rem auto;
+    margin-top: 10%;
 }
 
 .profilePage .profileSidebar .profilePicture .display-3 {
-    text-align: center;
-    margin-top: 2.9rem;
+    margin-top: 10%;
     margin-bottom: 3.4rem;
     font-family: 'Typo Round Regular Demo Regular';
 }
 
 .profilePage .profileSidebar .dpChangingArea button {
     font-size: 2rem;
-    width: 169px;
-    height: 54px;
+    width: 48%;
+    height: 5.4rem;
     margin-top: 2rem;
     background-color: #fff;
     border: 1px solid #00000029;
@@ -631,38 +780,42 @@ hr {
     transition: all linear .3s;
 }
 
-/* ---------fieldset area-------- */
+/* ---------fieldset & profileDetails area-------- */
+
+.profilePage .profileDetails {
+    width: 100%;
+    text-align: left;
+}
+
 .profilePage .profileDetails .form {
-    margin-top: 4.8rem;
-    margin-left: 8.2rem;
-    height: 60rem;
+    width: 53%;
+    margin: 4.5rem auto 4rem 8.2rem;
 }
 
 
 .profileDetails fieldset {
-    width: 37.4rem;
-    font-size: 1.8rem;
-    border: 1px solid #eeeeee;
+    border: 0.5px solid #00000029;
     margin-bottom: 3.2rem;
 }
 
+.profileDetails fieldset:hover {
+    box-shadow: 0px 0px 3px #00000029;
+}
+
 .profileDetails legend {
+    font-size: 1.8rem;
     color: #762A82;
-    padding: 5px 10px;
-    display: inline-block;
-    font-family: 'Typo Round Regular Demo Regular';
+    float: none;
+    width: auto;
+    margin-left: 1rem;
+    font-family: 'Typo Round Bold Demo Regular';
 }
 
 .profileDetails label {
+    font-size: 1.8rem;
     font-family: 'Typo Round Regular Demo Regular';
     margin: auto auto 1rem 1rem;
 }
-
-.profileDetails input {
-    margin: 5px;
-}
-
-
 
 
 /* =============Profile CSS end=========== */

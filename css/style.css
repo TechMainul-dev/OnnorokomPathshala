@@ -87,17 +87,16 @@ a {
     height: 5.5rem;
     font-size: 2rem;
     background: transparent linear-gradient(270deg, #E11722 0%, #742B84 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 5px #782A80;
     color: #fff;
     border-radius: 2.8rem;
     border: none;
     font-family: 'Typo Round Bold Demo Regular';
 }
 
-.playlist button:hover,
-.playBtn:hover {
+.playlist button:hover {
     background: transparent linear-gradient(270deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
     transition: all linear 0.3s;
-    box-shadow: .3rem .3rem .5rem #782A80;
 }
 
 
@@ -113,6 +112,11 @@ a {
 #navbar {
     padding-top: .6rem;
     overflow: hidden;
+    height: 7.9rem;
+}
+
+.customToggler {
+    display: none;
 }
 
 .sticky {
@@ -127,7 +131,7 @@ a {
 
 .searchButton {
     display: inline-block;
-    margin: .6rem 0rem 0rem 0rem;
+    margin: .2rem 0rem 0rem 0rem;
     height: 0rem;
     color: white;
     cursor: pointer;
@@ -196,6 +200,10 @@ nav button {
     font-family: 'Hind Siliguri', sans-serif;
 }
 
+.signInButton:hover {
+    color: #742B84;
+}
+
 /* -------------search area css end------------ */
 
 .banner {
@@ -230,15 +238,9 @@ nav button {
     font-weight: 600;
 }
 
-.banner .regButton:hover,
-.signInButton:hover,
-.recentPlaylist .loadMore button:hover {
-    background: transparent linear-gradient(135deg, #9e4ab1 0%, #be222a 100%) 0% 0% no-repeat padding-box;
-    transition: all linear 0.4s;
-    box-shadow: 0px 0px 20px #9e4ab1;
-    color: #fff;
+.banner .regButton:hover {
+    color: #E11722;
 }
-
 
 /* ================ header area css end ================= */
 
@@ -257,9 +259,6 @@ nav button {
     color: #484848;
 }
 
-/* --------------video area common css close-------------- */
-
-
 /* --------------classSelection css area start-------------- */
 
 .classSelection .classSelectionHeader {
@@ -271,32 +270,43 @@ nav button {
 .classSelection .class {
     margin: auto;
     text-align: center;
+    display: block;
 }
 
 .classSelection .class .selectClass {
     width: 16.2rem;
     height: 16.2rem;
-    font-size: 2.2rem;
     font-weight: 600;
-    padding-top: 3.5rem;
     box-shadow: 0rem 0rem 2rem #24415D4D;
     border-radius: 20px;
     display: inline-block;
-    margin-left: 1.5rem;
+    padding-top: 3.5rem;
     margin-top: 3rem;
+    margin-left: .8rem;
+    margin-right: .8rem;
 }
 
 .classSelection .class .selectClass img {
-    /* margin-bottom: 1.4rem; */
+    margin-bottom: 1.4rem;
     width: 5rem;
-    height: 5rem;
+    height: 5.9rem;
 }
 
 .classSelection .class .selectClass span {
+    font-size: 2.2rem;
     display: inline-block;
-    margin-top: 2rem;
+    width: 17rem;
 }
 
+.classSelection .class .selectClass:hover>img {
+    width: 4rem;
+    height: 4.7rem;
+}
+
+.classSelection .class .selectClass:hover>span {
+    display: block;
+    font-size: 3.2rem;
+}
 
 /* --------------classSelection css area end-------------- */
 /* --------------selectedVideo css area start-------------- */
@@ -320,31 +330,50 @@ nav button {
     height: 40.3rem;
     border-radius: 15px;
     border: none;
-    margin-left: 12px;
+    margin: 6px;
     box-shadow: 0px 0px 2rem #D9DCE3;
     display: inline-block;
     margin-top: 3rem;
 }
 
-.selectedPlaylist .card img {
-    width: 35.1rem;
+.hoverCard-body {
+    font-size: 1.8rem;
+    font-weight: 450;
+    float: left;
+    background-color: #fff;
+    padding: .4rem 3.3rem;
+    border-radius: 15px 0 0 0;
+    display: none;
 }
 
-.selectedPlaylist .card iframe {
-    width: 35.1rem;
-    border-radius: 15px 15px 0px 0px;
+.selectedPlaylist .card:hover .hoverCard-body {
+    display: block;
 }
 
-.selectedPlaylist .card #banner-video {
-    width: 35.1rem;
-    height: 19.7rem;
-    border-radius: 15px 15px 0px 0px;
+.selectedVideoImg {
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.selectedChemistry {
+    background-image: url(../img/chemistry.png);
+}
+
+.selectedMath {
+    background-image: url(../img/math.png);
+}
+
+.selectedEng {
+    background-image: url(../img/physics.png);
 }
 
 .selectedPlaylist .card button {
     width: 56px;
     height: 56px;
-    margin-top: -30px;
+    margin-top: -25px;
     border-radius: 50px;
     border: none;
     background: transparent linear-gradient(135deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
@@ -355,12 +384,6 @@ nav button {
     top: 50%;
     left: 40%;
 }
-
-.selectedPlaylist .card button:hover {
-    transition: all linear 0.3s;
-    box-shadow: 0 0 20px #E11722;
-}
-
 
 .selectedPlaylist .card .card-body {
     width: 326px;
@@ -431,8 +454,8 @@ nav button {
     box-shadow: 0px 0px 2rem #D9DCE3;
     margin-top: 3rem;
     display: inline-block;
-    margin-left: 1.4rem;
-    margin-top: 3rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
 }
 
 .recentPlaylist .card .card-img {
@@ -444,7 +467,7 @@ nav button {
 .recentPlaylist .card .playBtn {
     width: 41px;
     height: 41px;
-    margin-top: -35px;
+    margin-top: -4rem;
     border-radius: 50px;
     border: none;
     background: transparent linear-gradient(135deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
@@ -497,6 +520,11 @@ nav button {
     box-shadow: 0px 0px 2rem #D9DCE3;
 }
 
+.recentPlaylist .card .card-body .card-text button:hover {
+    background-color: rgb(228, 232, 247);
+}
+
+
 .recentPlaylist .loadMoreBtn {
     margin: auto;
     padding-bottom: 60px;
@@ -504,26 +532,19 @@ nav button {
 }
 
 .recentPlaylist .loadMore button {
+    font-size: 1.2rem;
     width: 104px;
     height: 26px;
+    color: #475677;
     border: 1px solid #475677;
     border-radius: 28px;
     background: transparent;
 }
 
-
-.recentPlaylist .card .card-body .card-text button:hover {
-    background-color: rgb(174, 191, 244);
-    box-shadow: 0px 10px 2rem #cd0a2b;
-
-}
-
-.selectedPlaylist .card:hover,
-.recentPlaylist .card:hover,
-.classSelection .selectClass:hover {
-    background: transparent linear-gradient(270deg, #b16ec1 0%, #e14b52 100%);
-    box-shadow: 0px 0px 20px #ce353d;
-    transition: all linear 0.3s;
+.recentPlaylist .loadMore button:hover {
+    background: transparent linear-gradient(135deg, #9e4ab1 0%, #be222a 100%) 0% 0% no-repeat padding-box;
+    transition: all linear 0.4s;
+    color: #fff;
 }
 
 /* --------------recentlyAdded css area end-------------- */
@@ -554,11 +575,6 @@ nav button {
     border-radius: 50%;
     box-shadow: 0px 3px 6px #00000026;
     margin: auto;
-}
-
-.pathshalaActivity .content .iconImg:hover {
-    box-shadow: 0px 10px 20px #9e4ab1;
-    transition: all linear 0.3s;
 }
 
 .pathshalaActivity .content .iconImg img {
@@ -614,6 +630,7 @@ footer {
     font-size: 2.4rem;
     text-transform: uppercase;
     text-align: left;
+    margin-bottom: 1.8rem;
     font-family: 'Typo Round Bold Demo Regular';
 }
 
@@ -624,7 +641,7 @@ footer {
 .contactDetails ul {
     text-decoration: none;
     list-style: none;
-    margin-bottom: 2.2rem;
+    /* margin-bottom: 2.2rem; */
     margin-left: -1.7rem;
     text-align: left;
 }
@@ -636,7 +653,6 @@ footer {
     font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
 }
 
-
 .contactDetails .socialIcon {
     text-align: center;
     /* margin: auto; */
@@ -647,12 +663,6 @@ footer {
     padding: .7rem;
     font-size: 3.1rem;
     color: #fff;
-}
-
-.contactDetails .socialIcon i:hover {
-    box-shadow: 0px 10px 10px;
-    transition: all linear 0.3s;
-    border-radius: 50%;
 }
 
 .copyright {
@@ -673,10 +683,9 @@ footer {
     font-family: 'Typo Round Thin Demo Regular';
 }
 
-.contactDetails ul li a:hover,
-.copyright:hover {
+/* .copyright:hover {
     color: chartreuse;
     transition: all linear 0.3s;
-}
+} */
 
 /* ================ Footer area css end ================= */

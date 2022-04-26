@@ -36,7 +36,7 @@
                             <form action="index.html" method="get">
                                 <input class="search expandRight" id="searchright" type="search" name="q"
                                     placeholder="অনুসন্ধান">
-                                <label class="searchButton" for="searchright">
+                                <label class="searchButton me-1" for="searchright">
                                     <img src="./Icon/topSearch.png" alt="search/png">
                                 </label>
                             </form>
@@ -55,6 +55,8 @@
                     </div><!-- navMenu close-->
                 </div>
             </nav><!-- =================== navbar end  =================== -->
+
+
             <div class="container">
                 <div class="row">
                     <div class="col headTxt text-light float-start">
@@ -90,6 +92,7 @@
             <div class="display-4 classSelectionHeader">শ্রেণী নির্বাচন করো</div>
 
             <div class="class">
+
                 <div class="col selectClass">
                     <img src="./Icon/class_08.png" alt="class_eight/png">
                     <br>
@@ -105,17 +108,17 @@
                     <br>
                     <span>একাদশ-দ্বাদশ</span>
                 </div>
-                <div class="col  selectClass">
+                <div class="col selectClass">
                     <img src="./Icon/class_versity.png" alt="class_eight/png">
                     <br>
                     <span>ভার্সিটি 'ক'</span>
                 </div>
-                <div class="col  selectClass">
+                <div class="col selectClass">
                     <img src="./Icon/class_medicale.png" alt="class_eight/png">
                     <br>
                     <span>মেডিকেল</span>
                 </div>
-                <div class="col  selectClass">
+                <div class="col selectClass">
                     <img src="./Icon/class_eng.png" alt="class_eight/png">
                     <br>
                     <span>ইঞ্জিনিয়ারিং</span>
@@ -130,7 +133,7 @@
                 <div class="col display-4 float-start">নির্বাচিত ভিডিও</div>
 
                 <div class="col float-end">
-                    <form class="playlist" action="index.html">
+                    <form class="playlist playBtn" action="index.html">
                         <button class="float-end" type="submit">
                             View All Playlist
                         </button>
@@ -142,8 +145,11 @@
             <div class="selectedPlaylist">
 
                 <div class="col card">
-                    <img class="card-img-top" src="./img/chemistry.png" alt="Card image">
-                    <button class="active"><i class="fa-solid fa-play"></i></button>
+                    <div class="selectedVideoImg selectedChemistry">
+                        <span class="hoverCard-body">ভার্সিটি 'ক'</span>
+
+                        <button class="active"><i class="fa-solid fa-play"></i></button>
+                    </div>
 
                     <div class="card-body">
                         <div class="clearfix">
@@ -164,8 +170,11 @@
                 </div>
 
                 <div class="col card">
-                    <img class="card-img-top" src="./img/math.png" alt="Card image">
-                    <button class="active"><i class="fa-solid fa-play"></i></button>
+
+                    <div class="selectedVideoImg selectedMath">
+                        <span class="hoverCard-body">অষ্টম</span>
+                        <button class="active"><i class="fa-solid fa-play"></i></button>
+                    </div>
                     <div class="card-body">
 
                         <div class="clearfix">
@@ -187,14 +196,10 @@
                 </div>
 
                 <div class="col card">
-
-                    <div id="banner-video" preload="auto" loop>
-                        <iframe width="391" height="197" src="https://www.youtube.com/embed/6jl5SBb2aAY"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <div class="selectedVideoImg selectedEng">
+                        <span class="hoverCard-body">ইঞ্জিনিয়ারিং</span>
+                        <button class="active"><i class="fa-solid fa-play"></i></button>
                     </div>
-                    <button class="active"><i class="fa-solid fa-play"></i></button>
 
                     <div class="card-body">
                         <div class="clearfix">
@@ -262,7 +267,6 @@
                             <button>
                                 <img src="./Icon/txt.png" alt="comment/png">
                             </button>
-
                         </p>
                     </div>
                 </div>

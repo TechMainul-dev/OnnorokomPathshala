@@ -10,6 +10,7 @@
     <link rel="icon" href="./img/onnorokomPathshala_icon.png">
     <link rel="stylesheet" href="./css/all.css"> <!-- fontAwesome css file  -->
     <link rel="stylesheet" href="./css/bootstrap.css"> <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- my stylesheet -->
     <link rel="stylesheet" href="./css/dashboard.css"> <!-- my stylesheet -->
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/responsive.css"> <!-- my responsive stylesheet -->
@@ -23,9 +24,9 @@
 </head>
 
 <body>
-    <div class="bg">
+    <div class="bg dashboardHome">
         <nav id="navbar" class="navbar sticky-top">
-            <div class="container">
+            <div class="container container-mobile">
                 <div class="logo">
                     <a href="index.html">
                         <img src="./Logo/logo_small.png" alt="png/img">
@@ -41,55 +42,54 @@
                             </label>
                         </form>
                     </div>
-
-                    <div class="nav-link float-start userProfile">
-                        <form class="" action="./login.html">
-                            <img src="./Icon/userProfile.png" alt="user/png">
-                        </form>
+                    <div class="userProfile float-end">
+                        <img src="./Icon/userProfile.png" alt="user/png">
                     </div>
 
                 </div><!-- navMenu close-->
             </div>
-        </nav><!-- =================== navbar end  =================== -->
+        </nav>
+        <!--=================== navbar end  ===================-->
 
 
         <div class="questionBank container">
-            <div class="videoPageContainer mx-auto">
+            <div class="videoPageContainer">
                 <p class="sectionTitle">Subject Based</p>
                 <span class="display-2">Question Bank </span>
 
                 <form class="subjects mx-auto" action="./playlist.html" id="submit">
                     <div class="col selectSubject" type="submit" role="button"
                         onclick="document.getElementById('submit').submit();">
-                        <span>পদার্থ
-                            <i class="fa-solid fa-file-pdf"></i></span>
+                        <span>পদার্থ</span>
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+
+
+                    <div class="col selectSubject" type="submit" role="button"
+                        onclick="document.getElementById('submit').submit();">
+                        <span>গণিত</span>
+                        <i class="fa-solid fa-file-pdf"></i>
                     </div>
                     <div class="col selectSubject" type="submit" role="button"
                         onclick="document.getElementById('submit').submit();">
-                        <span>গণিত
-                            <i class="fa-solid fa-file-pdf"></i></span>
+                        <span>রসায়ন</span>
+                        <i class="fa-solid fa-file-pdf"></i>
                     </div>
                     <div class="col selectSubject" type="submit" role="button"
                         onclick="document.getElementById('submit').submit();">
-                        <span>রসায়ন
-                            <i class="fa-solid fa-file-pdf"></i></span>
+                        <span>জীববিজ্ঞান</span>
+                        <i class="fa-solid fa-file-pdf"></i>
                     </div>
                     <div class="col selectSubject" type="submit" role="button"
                         onclick="document.getElementById('submit').submit();">
-                        <span>জীববিজ্ঞান
-                            <i class="fa-solid fa-file-pdf"></i></span>
-                    </div>
-                    <div class="col selectSubject" type="submit" role="button"
-                        onclick="document.getElementById('submit').submit();">
-                        <span>English
-                            <i class="fa-solid fa-file-pdf"></i></span>
+                        <span>English</span>
+                        <i class="fa-solid fa-file-pdf"></i>
                     </div>
 
                 </form>
 
             </div>
         </div>
-
 
 
         <div id="footer"></div>

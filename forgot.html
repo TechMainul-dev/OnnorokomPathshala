@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <section class="loginArea">
+        <section class="forgot loginArea banner">
             <nav id="navbar" class="navbar sticky-top">
                 <div class="container">
                     <div class="logo">
@@ -37,7 +37,7 @@
                             <form action="index.html" method="get">
                                 <input class="search expandRight" id="searchright" type="search" name="q"
                                     placeholder="অনুসন্ধান">
-                                <label class="searchButton" for="searchright">
+                                <label class="searchButton me-1" for="searchright">
                                     <img src="./Icon/topSearch.png" alt="search/png">
                                 </label>
                             </form>
@@ -56,11 +56,11 @@
                     </div><!-- navMenu close-->
                 </div>
             </nav><!-- =================== navbar end  =================== -->
-            <div class="container">
-                <div class="passReset submitCard d-block mx-auto">
 
+
+            <div class="container registerBGHeight">
+                <div class="loginCard submitCard">
                     <h2 class="mx-auto">অন্যরকম পাঠশালায় স্বাগতম</h2>
-
 
                     <form class="loginForm" action="./otp.html">
                         <div class="input clearfix">
@@ -73,15 +73,18 @@
                             <label for="phoneNumber">
                                 <i class="fa-solid fa-phone form-control-feedback"></i>
                             </label>
-                            <input class="searchInput" type="number" name="phone Number"
+                            <input class="searchInput" type="number" name="phoneNumber"
                                 placeholder="Enter Phone Number">
                         </div>
                         <br>
-                        <button type="submit">Next</button>
+                        <div class="nextBtn">
+                            <button type="submit">Next</button>
+                        </div>
                     </form>
-
                 </div>
             </div>
+
+
         </section>
     </header> <!-- ================ header area end ================= -->
 

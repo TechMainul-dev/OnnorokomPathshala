@@ -9,8 +9,13 @@
 /* ========= phone =  480px | sm applies to x-small devices (portrait phones, less than 576px) ========= */
 @media (min-width: 320px) and (max-width: 575px) {
 
+    /*--------index.html responsive area start---------*/
     .container {
-        width: 98%;
+        width: 85.6%;
+    }
+
+    .container-mobile {
+        width: 95%;
     }
 
     .banner {
@@ -21,54 +26,85 @@
         display: flex;
     }
 
-    .banner a img {
-        width: 50%;
-        margin-top: 1px;
+    #navbar {
+        padding-top: .7rem;
+        overflow: hidden;
+        height: 4.4rem;
+    }
+
+    .customToggler {
+        display: block;
+        border: none;
+        margin-left: -5rem;
+    }
+
+    .sticky {
+        width: 100%;
     }
 
     .topSearch .searchButton img {
-        width: 55%;
+        width: 50%;
         float: right;
         margin-top: -1.1rem;
-
     }
 
     .search-container {
         font-size: 1rem;
+        margin: 0 3.5rem 0 0;
     }
 
     .search:focus {
-        width: 16.5rem;
+        display: none;
+        /* width: 15rem;
         height: 2rem;
-        margin-top: -.2rem;
+        margin-top: -.2rem; */
     }
 
     .search {
         height: 2rem;
     }
 
-    .banner .signInBtn button {
+    .signInBtn button {
         width: 5.6rem;
-        height: 1.9rem;
-        font-weight: 400;
+        height: 2rem;
         font-size: 1.2rem;
+        font-weight: 400;
         font-family: 'Hind Siliguri', sans-serif;
-        margin-left: -34px;
+        margin-left: -5rem;
+    }
+
+    .signInBtn span {
+        line-height: 2rem;
+    }
+
+    .banner a img {
+        width: 50%;
+        margin: 1px auto auto 25%;
+    }
+
+    .banner .row {
+        /* display: block; */
+        z-index: 0;
+    }
+
+    .banner .headTxt {
+        z-index: 1;
     }
 
     .banner .row h1 {
         font-size: 2.1rem;
-        width: 300px;
-        height: 34px;
-        margin-top: 5rem;
-        margin-bottom: 8rem;
+        width: 100%;
+        height: auto;
+        text-shadow: none;
+        margin-top: 3rem;
+        margin-bottom: 3.1rem;
     }
 
     .banner .row h2 {
         font-size: 2rem;
-        width: 300px;
-        height: 34px;
-        margin-bottom: 4rem;
+        width: 290px;
+        height: auto;
+        margin-bottom: 3.5rem;
     }
 
     .banner .regButton {
@@ -78,34 +114,66 @@
         font-weight: 500;
     }
 
-    .banner .headTxt {
-        z-index: 1;
+    .banner .regButton span {
+        line-height: 2.3rem;
     }
 
     .banner .pathshalaImg img {
         float: right;
-        width: 40%;
-        top: 7rem;
-        left: 17rem;
+        width: 230.36px;
+        top: 5.5rem;
+        right: 1%;
         z-index: 0;
         position: absolute;
-    }
-
-
-    .classSelection .classSelectionHeader {
-        margin-top: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    .classSelection .class .selectClass {
-        margin-top: 1rem;
-        margin-left: 1rem;
     }
 
     .display-4 {
         font-size: 24px;
         margin-bottom: 0px;
         padding: 0 0;
+    }
+
+    .classSelection {
+        text-align: center;
+    }
+
+    .classSelection .classSelectionHeader {
+        width: 32rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    .classSelection .class {
+        width: 100%;
+    }
+
+    .classSelection .class .selectClass {
+        width: 10rem;
+        height: 10rem;
+        margin: .5rem;
+    }
+
+    .classSelection .class .selectClass img {
+        margin-top: -1.7rem;
+        /* width: 5rem; */
+        height: auto;
+    }
+
+    .classSelection .class .selectClass span {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        /* margin-left: 0; */
+        width: auto;
+    }
+
+    .classSelection .class .selectClass:hover>img {
+        width: 3.1rem;
+        height: auto;
+    }
+
+    .classSelection .class .selectClass:hover>span {
+        font-size: 1.3rem;
     }
 
     .playlist button {
@@ -129,11 +197,7 @@
 
     .selectedVideoHeader {
         margin-top: 6rem;
-        margin-bottom: 0rem;
-    }
-
-    .selectedPlaylist .card {
-        margin-top: 2.11rem;
+        margin-bottom: 2rem;
     }
 
     .selectedPlaylist {
@@ -142,30 +206,24 @@
     }
 
     .selectedPlaylist .card {
-        top: 3rem;
-        width: 321px;
-        height: 369px;
+        width: 100%;
+        height: 36.878rem;
+        margin: 0rem;
         margin-bottom: 2rem;
-        border-radius: 10px;
-        border: none;
-        align-items: center;
-        box-shadow: 0px 0px 2rem #D9DCE3;
     }
 
-    .selectedPlaylist .card img {
-        width: 32.1rem;
+    .selectedPlaylist .card button {
+        top: 49%;
     }
 
-    .selectedPlaylist .card iframe {
-        width: 31rem;
-    }
-
-    .selectedPlaylist .card #banner-video {
-        width: 33.1rem;
+    .selectedPlaylist .card button i {
+        font-size: 2rem;
+        margin-top: 0rem;
+        margin-left: .4rem;
     }
 
     .selectedPlaylist .card .card-body {
-        width: 298px;
+        width: 95%;
     }
 
     .selectedPlaylist .card .card-body h2 {
@@ -180,6 +238,10 @@
         font-size: 1.8rem;
     }
 
+    .selectedPlaylist .card .card-body hr {
+        border: .1px solid #742B84;
+    }
+
     .recentlyAdded .headerTop {
         min-width: 200px;
     }
@@ -189,21 +251,23 @@
     }
 
     .recentlyAddedHeader {
-        margin-top: 7rem;
-        margin-bottom: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
     }
 
-    .recentPlaylist .card {
-        margin-left: 15rem;
-        margin-top: 2rem;
-    }
-
-    .recentPlaylist .card {
+    .recentlyAdded .recentPlaylist .card {
+        /* margin-left: 15rem; */
+        /* margin-top: 2rem; */
         margin-bottom: 3rem;
     }
 
     .pathshalaActivity {
         height: 45rem;
+    }
+
+    .pathshalaActivity .header {
+        width: 110%;
+        padding: 2rem 0rem 1rem 0;
     }
 
     .pathshalaActivity .content .iconImg {
@@ -218,8 +282,6 @@
         margin-top: 1rem;
     }
 
-
-
     .pathshalaActivity .content .display-5 {
         font-size: 20px;
     }
@@ -233,19 +295,19 @@
         margin-top: 20px;
     }
 
-    .pathshalaActivity .header {
-        padding: 2rem 0rem 1rem 0;
-        background-color: #fff;
-    }
-
     footer {
         margin-top: 4.6rem;
         height: auto;
         background: transparent linear-gradient(180deg, #762A82 0%, #9A245F 100%) 0% 0% no-repeat padding-box;
     }
 
+    .footer .footerArea {
+        margin-top: -4rem;
+    }
+
     .footer .contactDetails {
         width: 50%;
+        margin-top: 8rem;
     }
 
     .contactDetails h2 {
@@ -260,6 +322,14 @@
         font-size: 1.4rem;
     }
 
+    .footer .footerArea .right h2 {
+        margin-left: 5rem;
+    }
+
+    .footer .footerArea .right ul {
+        margin-left: 3rem;
+    }
+
     .contactDetails .socialIcon a i {
         padding: .5rem;
         font-size: 2rem;
@@ -268,6 +338,8 @@
     .copyright {
         padding-top: 3rem;
         padding-bottom: 5rem;
+        margin-top: 7rem;
+        margin-bottom: 0rem;
         border-top: 2px solid #A7608F;
     }
 
@@ -278,6 +350,570 @@
     .copyright h4 {
         font-size: 1.4rem;
     }
+
+    /*--------index.html responsive area end---------*/
+
+
+
+    /*==========================================================*/
+
+
+
+    /*-----------login area responsive css start-------------*/
+    .searchButton {
+        margin: 0.2rem -4rem 0rem 0rem;
+    }
+
+    .userProfile img {
+        width: 3rem;
+        margin-top: -.3rem;
+    }
+
+    .footer {
+        margin-top: 12rem;
+    }
+
+    .loginCard {
+        width: 95%;
+    }
+
+    .loginCard h2 {
+        font-size: 140%;
+        width: 80%;
+        height: 3rem;
+    }
+
+    .submitCard {
+        margin-top: 5rem;
+    }
+
+    .input {
+        width: 90%;
+        height: 2.86%;
+        margin-top: 0rem;
+    }
+
+    .fa-solid {
+        font-size: 1.5rem;
+        padding: .5rem;
+        margin-left: -1rem;
+        margin-top: .3rem;
+    }
+
+    .searchInput {
+        width: 80%;
+        height: 3.5rem;
+        font-size: 1.2rem;
+        font-family: 'Typo Round Regular Demo Regular';
+        border: none;
+        margin-left: 1rem;
+    }
+
+    .registerBGHeight {
+        height: 50rem;
+    }
+
+    .loginForm button {
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .submitCard .regButton {
+        width: auto;
+        margin-top: 8rem;
+    }
+
+    .submitCard .regButton h3 {
+        font-size: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .submitCard .regButton button {
+        font-size: 1.2rem;
+        width: 95px;
+        height: 25px;
+    }
+
+    /*-----------login area responsive css end-------------*/
+    /*-----------forgotPass area responsive css start-------------*/
+
+    .forgotPass {
+        font-size: 1.5rem;
+    }
+
+
+    .nextBtn {
+        margin-bottom: 2.5rem;
+    }
+
+    /*-----------forgotPass area responsive css end-------------*/
+    /*-----------OTP area responsive css start-------------*/
+
+    .passReset img {
+        width: 20%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .passReset h3 {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .otpResend {
+        font-size: 1rem;
+        text-align: right;
+        margin-right: 5%;
+        line-height: 1rem;
+    }
+
+    /*-----------OTP area responsive css end-------------*/
+    /*-----------selectClass area responsive css start-------------*/
+    .admittedClass {
+        height: 19rem;
+    }
+
+    .admittedClass .admit {
+        height: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .admittedClass .admit a {
+        line-height: 2.1rem;
+        font-size: 1.2rem;
+    }
+
+    .admittedClass .admit:hover i {
+        padding: .25rem;
+        margin-top: 0rem;
+    }
+
+    .admittedClass .admit:hover a {
+        font-size: 2rem;
+    }
+
+    /*-----------selectClass area responsive css end-------------*/
+    /*-----------selectBirthday area responsive css start-------------*/
+
+    .selectBirthday {
+        height: 15rem;
+    }
+
+    .selectBirthday select {
+        padding: 0rem;
+        font-size: 1.2rem;
+    }
+
+    .selectBirthday i {
+        padding: .35rem;
+        margin-top: 0rem;
+        margin: 0 0 -.8rem -1.4rem;
+    }
+
+    /*-----------selectBirthday area responsive css end-------------*/
+    /*-----------newPassword area responsive css start-------------*/
+    .newPassword button {
+        margin-bottom: 2rem;
+    }
+
+    /*-----------newPassword area responsive css end-------------*/
+    /*-----------Success area responsive css start-------------*/
+    .success {
+        height: 25rem;
+    }
+
+    .success span {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+        display: block;
+        font-family: 'Typo Round Demo';
+    }
+
+    .success img {
+        margin-bottom: 1.95rem;
+    }
+
+    .success h3 {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .success button {
+        width: 7rem;
+    }
+
+    /*-----------Success area responsive css end-------------*/
+
+
+
+
+
+
+    /*======================================================*/
+
+
+
+
+
+
+    /*-----------dashboard_01 area responsive css start-------------*/
+    .dashboardHome #navbar {
+        height: 5rem;
+        min-width: 100%;
+    }
+
+    .dashboardHome .navbar .logo img {
+        width: 70%;
+    }
+
+    .dashContainer {
+        width: 100%;
+    }
+
+    .dashHeader .suggestionBar iframe {
+        width: 300px;
+        height: 160px;
+        margin-bottom: -7rem;
+    }
+
+    .dashHeader .display-3,
+    .dashHeader h1,
+    .sectionTitle,
+    .sectionSubtitle,
+    .h3,
+    time,
+    .views {
+        font-size: 250%;
+    }
+
+    .subjectSelection .selectSubject {
+        width: 12rem;
+        height: 12rem;
+        margin: .5rem;
+    }
+
+    .subjectSelection .selectSubject img {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .subjectSelection .selectSubject h3 {
+        font-size: 2rem;
+        height: 5rem;
+        margin-bottom: 0;
+    }
+
+    .studyIncrease {
+        margin-top: 5rem;
+    }
+
+    .studyIncrease .category select {
+        margin-top: 1rem;
+    }
+
+    .studyIncrease .category .fa-calendar-days {
+        display: none;
+    }
+
+    .studyIncrease .sectionSubtitle {
+        margin-bottom: 0rem;
+    }
+
+    .studyIncrease .increaseVolume {
+        width: 30rem;
+    }
+
+
+    .studyIncrease .increaseVolume .volumeBorder img {
+        width: 4.5rem;
+        height: 4.5rem;
+        float: left;
+        margin-top: -.3em;
+        margin-left: -1px;
+    }
+
+    .studyIncrease .increaseVolume .volumeBorder .skills span {
+        padding: .6rem .4rem;
+        background-color: #fff;
+        border-radius: 50%;
+        font-size: 90%;
+        margin-right: -1px;
+    }
+
+    .studyIncrease .increaseVolume .che .skills span {
+        padding: .60rem 0rem;
+    }
+
+    .dashSidebar {
+        margin-top: 5rem;
+    }
+
+    .dashSidebar .selectedPlaylist {
+        width: 32rem;
+        display: inline-block;
+    }
+
+    .dashSidebar .selectedPlaylist .card {
+        /* width: 80%; */
+        margin-left: -13%;
+    }
+
+    /*-----------dashboard_01 area responsive css end-------------*/
+    /*----------video page responsive css start----------*/
+    .videoPage {
+        margin-top: 3rem;
+    }
+
+    .videoPageContainer {
+        width: 95%;
+        padding-top: 2.4rem;
+    }
+
+
+    .videoPage .banner-video iframe {
+        width: 98%;
+        height: 20rem;
+    }
+
+    .videoHead .headContent,
+    .videoContent .videoDetails {
+        width: 60%;
+    }
+
+    .videoPage .display-3,
+    .videoPage .headContent .h1,
+    .videoPage .videoPlaylist .videoDetails time {
+        font-size: 130%;
+        text-align: left;
+    }
+
+    .videoPage .videoPlaylist .videoDetails h3 {
+        font-size: 130%;
+    }
+
+    .videoHead .headIcon img {
+        width: 2.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .percentage {
+        position: relative;
+        top: 6px;
+        left: 4px;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    .watchPercentage {
+        margin-top: -4rem;
+        position: relative;
+        text-align: center;
+        width: 37px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #1A73E8;
+        background-image: linear-gradient(170deg, transparent 35%, #f0f0f0 35%), linear-gradient(90deg, #f0f0f0 10%, transparent 10%);
+    }
+
+    .watchPercentage .category {
+        font-size: 10px;
+        line-height: 2.8rem;
+    }
+
+
+    /*----------video page responsive css end----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*----------videoLessons page responsive css start----------*/
+
+    .videoLessons .display-3 {
+        font-size: 250%;
+    }
+
+    .videoLessons .videoHead .duration i,
+    .videoLessons .videoHead .headIcon select,
+    .videoLessons .videoPlaylist .videoContent span {
+        font-size: 1.2rem;
+    }
+
+    .videoLessons .videoHead .headContent .h3,
+    .videoLessons .videoPlaylist .videoContent h3 {
+        font-size: 1.5rem;
+    }
+
+    .videoLessons .videoHead .headContent .category {
+        font-size: 130%;
+    }
+
+    .videoLessons .videoLoadMore {
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+    }
+
+    /*----------videoLessons page responsive css end----------*/
+
+
+
+
+
+
+
+
+
+
+
+    /*----------questionBank page responsive css start----------*/
+    .questionBank {
+        height: 70rem;
+    }
+
+    .questionBank .sectionTitle {
+        font-size: 300%;
+        margin: auto;
+    }
+
+    .questionBank .display-2 {
+        font-size: 250%;
+    }
+
+    .questionBank .subjects {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .questionBank .selectSubject {
+        width: 15rem;
+    }
+
+    .questionBank .selectSubject span {
+        width: 77%;
+        font-size: 2rem;
+    }
+
+    .questionBank .selectSubject i {
+        font-size: 3rem;
+    }
+
+    /*----------questionBank page responsive css end----------*/
+
+
+
+
+
+
+
+
+
+
+    /*----------videoPlaylistPage responsive css start----------*/
+
+    .vpPage .display-1 {
+        padding-top: 5rem;
+        font-size: 2.4rem;
+    }
+
+    .videoPlaylistPage .addBtn {
+        margin-bottom: 6rem;
+    }
+
+    .vpPage .sectionTitle,
+    .videoPlaylistPage .videoListArea .card,
+    .videoPlaylistPage .addBtn span,
+    .videoPlaylistPage .videoListArea .addBtn .fa-plus {
+        font-size: 180%;
+    }
+
+    .videoPlaylistPage .videosList {
+        width: 95%;
+        margin-top: 1.5rem;
+        height: 5rem;
+        border-bottom: 1px solid #00000029;
+    }
+
+    .videoPlaylistPage .videosList img {
+        width: 25%;
+        height: auto;
+        margin-top: 0.5rem;
+    }
+
+    .videoPlaylistPage .videosList p {
+        width: 65%;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .videoPlaylistPage .videosList time {
+        font-size: 1.2rem;
+    }
+
+    /*----------videoPlaylistPage responsive css end----------*/
+
+
+
+
+
+
+
+    /*----------profile page responsive css start----------*/
+    .profilePage {
+        margin: auto;
+        width: auto;
+    }
+
+    .profilePage .profileSidebar .profilePicture .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .profilePage .profileSidebar .dpChangingArea button,
+    .profileDetails legend,
+    .profileDetails label {
+        font-size: 150%;
+    }
+
+    .profilePage .profileSidebar {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        width: 30rem;
+        display: inline-block;
+    }
+
+    .profilePage .profileSidebar .dpChangingArea button {
+        width: 14.8rem;
+        height: 3.5rem;
+        margin-top: 1rem;
+    }
+
+    .profilePage .profileDetails {
+        width: 30rem;
+        display: inline-block;
+    }
+
+    .profilePage .profileDetails .form {
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+
+    /*----------profile page responsive css end----------*/
+
 }
 
 
@@ -286,7 +922,6 @@
     .container {
         width: 55rem;
     }
-
 
     .search:focus {
         width: 25rem;
@@ -339,17 +974,14 @@
     }
 
     .display-4 {
-        font-size: 24px;
+        font-size: 4rem;
         margin-bottom: 0px;
         padding: 0 0;
     }
 
     .playlist button {
-        width: 9.7rem;
-        height: 2.4rem;
-        font-size: 1.1rem;
-        font-family: Typo Round Regular Demo Regular;
-        line-height: 5px;
+        width: 18rem;
+        height: 5rem;
     }
 
     .classSelection .classSelectionHeader {
@@ -434,16 +1066,271 @@
 
     /*--------Login page media query--------*/
 
-    .loginArea {
-        width: 90%;
-        height: 85.956rem;
+    .loginArea .loginCard {
+        width: 100%;
+        height: auto;
         background-size: cover;
     }
 
+    .loginForm .fa-solid {
+        margin-left: -6rem;
+    }
+
+    .loginForm .searchInput {
+        margin-left: 0rem;
+    }
+
+    .regButton {
+        margin-bottom: 5rem;
+    }
+
+    .selectBirthdayArea .selectBirthday {
+        height: 25rem;
+    }
+
+    .newPassword button {
+        margin-bottom: 4rem;
+    }
+
+    .success button {
+        margin-bottom: 4rem;
+    }
+
+    /*----------dashboard responsive css start----------*/
+    .dashContainer {
+        width: 100%;
+    }
+
+    .dashHeader .suggestionBar iframe {
+        width: 100%;
+        height: 278px;
+    }
+
+    .dashHeader .display-3,
+    .dashHeader h1,
+    .sectionTitle,
+    .sectionSubtitle,
+    .h3,
+    time,
+    .views {
+        width: 90%;
+    }
+
+    .dashSidebar {
+        margin-top: 10rem;
+        width: 50rem;
+        margin-left: 0rem;
+    }
+
+
+    .dashSidebar .selectedPlaylist .card {
+        width: 70%;
+        height: 40.3rem;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0px 0px 2rem #D9DCE3;
+        margin-top: 2rem;
+        /* float: left; */
+    }
+
+    .dashSidebar .selectedPlaylist .card .selectedVideoImg button {
+        top: 50%;
+    }
+
+    /*----------dashboard responsive css end----------*/
+    /*----------video page responsive css start----------*/
+    .videoPage .banner-video iframe {
+        width: 98%;
+        height: 18rem;
+    }
+
+    .videoPage .display-3,
+    .videoPage .headContent .h1,
+    .videoPage .videoPlaylist .videoDetails time {
+        font-size: 180%;
+        text-align: left;
+    }
+
+    .videoPage .videoPlaylist .videoDetails h3 {
+        font-size: 130%;
+    }
+
+    .videoHead .headIcon img {
+        width: 2.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .percentage {
+        position: relative;
+        top: 6px;
+        left: 4px;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    .watchPercentage {
+        margin-top: -4.3rem;
+        position: relative;
+        text-align: center;
+        width: 37px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #1A73E8;
+        background-image: linear-gradient(170deg, transparent 35%, #f0f0f0 35%), linear-gradient(90deg, #f0f0f0 10%, transparent 10%);
+    }
+
+    .watchPercentage .category {
+        font-size: 10px;
+        line-height: 2.8rem;
+    }
+
+
+    /*----------video page responsive css end----------*/
 
 
 
 
+
+
+
+
+
+
+
+
+    /*----------videoLessons page responsive css start----------*/
+
+    .videoLessons .display-3 {
+        font-size: 300%;
+    }
+
+    .videoLessons .videoHead .duration i,
+    .videoLessons .videoHead .headContent .h3,
+    .videoLessons .videoPlaylist .videoContent h3 {
+        font-size: 2rem;
+    }
+
+    .videoLessons .videoHead .headContent .category {
+        font-size: 130%;
+    }
+
+    .videoLessons .videoPlaylist .videoContent span {
+        font-size: 1.5rem;
+    }
+
+    .videoLessons .videoLoadMore {
+        margin-top: 3.5rem;
+    }
+
+    .videoLessons .videoLoadMore button {
+        width: 14rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        margin-bottom: 0rem;
+    }
+
+
+    /*----------videoLessons page responsive css end----------*/
+    /*----------questionBank page responsive css start----------*/
+    .questionBank {
+        height: 70rem;
+    }
+
+    .questionBank .sectionTitle {
+        font-size: 300%;
+        margin: auto;
+    }
+
+    .questionBank .display-2 {
+        font-size: 250%;
+    }
+
+    .questionBank .subjects {
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+
+    .questionBank .selectSubject {
+        width: 15rem;
+    }
+
+    .questionBank .selectSubject span {
+        width: 77%;
+        font-size: 2rem;
+    }
+
+    .questionBank .selectSubject i {
+        font-size: 3rem;
+    }
+
+    /*----------questionBank page responsive css end----------*/
+
+
+
+
+
+
+
+    /*----------videoPlaylistPage responsive css start----------*/
+
+    .vpPage .display-1 {
+        padding-top: 5rem;
+    }
+
+    .videoPlaylistPage .addBtn {
+        margin-bottom: 6rem;
+    }
+
+    .vpPage .sectionTitle,
+    .videoPlaylistPage .videoListArea .card,
+    .videoPlaylistPage .addBtn span,
+    .videoPlaylistPage .videoListArea .addBtn .fa-plus,
+    .videoPlaylistPage .videosList p {
+        font-size: 200%;
+    }
+
+    .videoPlaylistPage .videosList p {
+        width: 60%;
+    }
+
+    /*----------videoPlaylistPage responsive css end----------*/
+
+
+
+
+
+
+
+
+
+    /*----------profile page responsive css start----------*/
+    .profilePage {
+        margin: auto;
+        width: auto;
+    }
+
+    .profilePage .profileSidebar {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        width: 65%;
+        display: inline-block;
+    }
+
+    .profilePage .profileSidebar .dpChangingArea button {
+        width: 49.5%;
+    }
+
+    .profilePage .profileDetails .form {
+        width: 70%;
+        margin: 4.5rem auto 4rem auto;
+    }
+
+
+    /*----------profile page responsive css end----------*/
 }
 
 
@@ -544,6 +1431,188 @@
     }
 
 
+
+
+    /*----------dashboard responsive css start----------*/
+    .dashContainer {
+        width: 100%;
+    }
+
+    .dashHeader .suggestionBar iframe {
+        width: 100%;
+        height: 398px;
+    }
+
+    .dashSidebar {
+        width: 25rem;
+        margin-left: -2rem;
+    }
+
+    .dashHeader .display-3,
+    .dashHeader h1,
+    .sectionTitle,
+    .sectionSubtitle,
+    .h3,
+    time,
+    .views {
+        width: 100%;
+    }
+
+    .dashSidebar {
+        margin-top: 10rem;
+        width: 63rem;
+    }
+
+    .dashSidebar .selectedPlaylist .card {
+        width: 60%;
+        height: 40.3rem;
+        border-radius: 15px;
+        border: none;
+        margin: 0px;
+        box-shadow: 0px 0px 2rem #D9DCE3;
+        margin: 2rem;
+        /* float: left; */
+    }
+
+    .dashSidebar .selectedPlaylist .card .selectedVideoImg button {
+        top: 50%;
+    }
+
+    /*----------dashboard responsive css end----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+    /*----------video page responsive css start----------*/
+    .videoPage .banner-video iframe {
+        width: 98%;
+        height: 25rem;
+    }
+
+    .videoPage .display-3,
+    .videoPage .headContent .h1,
+    .videoPage .videoPlaylist .videoDetails time {
+        font-size: 200%;
+        text-align: left;
+    }
+
+    .videoPage .videoPlaylist .videoDetails h3 {
+        font-size: 150%;
+    }
+
+    .videoHead .headIcon img {
+        width: 2.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .watchPercentage {
+        margin-bottom: 2rem;
+    }
+
+
+    /*----------video page responsive css end----------*/
+
+
+
+
+    /*----------videoLessons page responsive css start----------*/
+    .videoLessons .display-3 {
+        font-size: 100%;
+    }
+
+    /*----------videoLessons page responsive css end----------*/
+
+
+
+
+
+
+    /*----------questionBank page responsive css start----------*/
+    .questionBank .subjects {
+        width: 60rem;
+    }
+
+    /*----------questionBank page responsive css end----------*/
+
+
+
+
+    /*----------videoPlaylistPage responsive css start----------*/
+    .vpPage .display-1 {
+        padding-top: 5rem;
+    }
+
+    .vpPage .sectionTitle,
+    .videoPlaylistPage .videoListArea .card,
+    .videoPlaylistPage .addBtn span,
+    .videoPlaylistPage .videoListArea .addBtn .fa-plus,
+    .videoPlaylistPage .videosList p {
+        font-size: 200%;
+    }
+
+    .videoPlaylistPage .videosList p {
+        width: 60%;
+    }
+
+    /*----------videoPlaylistPage responsive css end----------*/
+
+
+
+
+
+
+
+    /*----------videoPage responsive css start----------*/
+    .videoPlaylistArea .watchPercentage {
+        margin-top: -5rem;
+    }
+
+
+
+
+    /*----------videoPage responsive css end----------*/
+
+
+
+
+
+
+
+
+    /*----------profile page responsive css start----------*/
+    .profilePage {
+        margin-top: 5rem;
+    }
+
+    .profilePage .profileSidebar {
+        margin-top: -30rem;
+    }
+
+    .profilePage .profileSidebar .dpChangingArea button {
+        width: 100%;
+    }
+
+    .profilePage .profileDetails .form {
+        width: 90%;
+        margin: 4.5rem auto 4rem auto;
+    }
+
+
+    /*----------profile page responsive css end----------*/
+
+
+
+
+
+
 }
 
 /* ========== desktop | xl applies to large devices (desktops, less than 1200px) ========== */
@@ -574,23 +1643,145 @@
         margin-top: 9rem;
     }
 
-
-    /*  .pathshalaActivity .content .iconImg {
-        margin-left: 3rem;
-    } */
+    .recentPlaylist .card .card-body .card-text button {
+        margin-top: 1.3rem;
+    }
 
     .pathshalaActivity .content .display-5 {
         font-size: 3.8rem;
     }
 
-    .footerArea .contactDetails h2 {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-    }
-
     .copyright {
         padding-top: 20px;
     }
+
+    /*----------dashboard responsive css start----------*/
+    .dashContainer {
+        width: 46rem;
+        margin-left: -1rem;
+    }
+
+    .dashSidebar {
+        width: 35rem;
+        margin-left: -.5rem;
+    }
+
+    .dashHeader .suggestionBar iframe {
+        width: 45rem;
+        height: 25rem;
+    }
+
+    .dashHeader .display-3,
+    .dashHeader h1,
+    .sectionTitle,
+    .sectionSubtitle,
+    .h3,
+    time,
+    .views {
+        font-size: 300%;
+        width: 100%;
+    }
+
+    .studyIncrease .category {
+        text-align: right;
+    }
+
+    .dashSidebar .selectedPlaylist .card {
+        width: 100%;
+        height: 40.3rem;
+        border-radius: 15px;
+        border: none;
+        margin: 0px;
+        box-shadow: 0px 0px 2rem #D9DCE3;
+        margin-top: 6rem;
+        float: left;
+    }
+
+    .dashSidebar .selectedPlaylist .card .card-body {
+        width: 95%;
+    }
+
+    /*----------dashboard responsive css end----------*/
+    /*----------video page responsive css start----------*/
+
+    .videoPage .banner-video iframe {
+        width: 98%;
+        height: 30rem;
+    }
+
+    .vpPage .display-1 {
+        padding-top: 5rem;
+    }
+
+    .videoPage .display-3,
+    .videoPage .headContent .h1,
+    .videoPage .videoPlaylist .videoDetails time {
+        font-size: 200%;
+        text-align: left;
+    }
+
+    .videoPage .videoPlaylist .videoDetails h3 {
+        font-size: 150%;
+    }
+
+    .videoHead .headIcon img {
+        width: 2.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .watchPercentage {
+        margin-bottom: 2rem;
+    }
+
+    /*----------video page responsive css end----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* videoLessons------------------------------------ */
+    .videoLessons .display-3 {
+        font-size: 300%;
+    }
+
+    /* questionBank------------------------------------ */
+    .questionBank .subjects {
+        width: 70rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*----------profile page responsive css start----------*/
+    .profilePage .profileDetails .form {
+        width: 80%;
+        margin: 4.5rem auto 4rem auto;
+    }
+
+
+    /*----------profile page responsive css end----------*/
+
+
+
 }
 
 /* ========== desktop | xxl applies to x-large devices (large desktops, less than 1400px) ========== */

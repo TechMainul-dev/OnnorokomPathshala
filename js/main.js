@@ -43,7 +43,7 @@ $(document).ready(function () {
 jQuery(document).ready(function ($) {
     $('.counter').counterUp({
         delay: 1,
-        time: 1000
+        time: 150
     });
 });
 
@@ -51,6 +51,14 @@ jQuery(document).ready(function ($) {
 // Counter function end =========================
 
 // html import function start ===================
+
+/* 
+$(function () {
+    $("#navbarImport").load("../navbarImport.html");
+});
+ */
+
+
 $(function () {
     $("#footer").load("../footer.html");
 });
@@ -86,8 +94,8 @@ timer(300);
 
 
 // submit button function start=====================
-var button=document.getElementById('sub');
-button.onclick=function(){
+var button = document.getElementById('sub');
+button.onclick = function () {
     document.getElementById("myForm").submit();
 }
 

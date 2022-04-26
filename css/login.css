@@ -8,14 +8,22 @@ html {
     font-size: 62.5%;
 }
 
+.container {
+    width: 111rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 .loginArea {
     background: url(../img/Shadow.png);
     width: 100%;
-    height: 85.956rem;
+    height: auto;
     background-size: cover;
 }
 
-.navbar {
+#navbar {
+    width: 100%;
     background: transparent linear-gradient(90deg, #7A2A7E 0%, #E31620 100%) 0% 0% no-repeat padding-box;
     height: 7.9rem;
 }
@@ -25,19 +33,14 @@ html {
     margin-top: -.4rem;
 }
 
-.loginCard {
-    width: 65.2rem;
-    height: 70rem;
-}
-
 h2 {
     font-size: 3rem;
-    width: 44.2rem;
+    width: 67.94%;
     height: 8.8rem;
     color: #fff;
     text-align: center;
-    margin-top: 5.2rem;
-    margin-bottom: 2.3rem;
+    margin-top: 7.98%;
+    margin-bottom: 9.66%;
     font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
 }
 
@@ -49,10 +52,12 @@ h2 {
     margin-top: 16rem;
     text-align: center;
     justify-items: center;
+    /* align-items: center; */
+    /* margin: auto; */
 }
 
 footer {
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 
 .contactDetails .footerLogo img {
@@ -67,29 +72,20 @@ footer {
 .footerArea .contactDetails h2 {
     margin-top: 0rem;
     margin-bottom: 0rem;
+    height: 5rem;
+}
+
+.registerBGHeight {
+    height: 77rem;
 }
 
 /* -------common CSS close------- */
 
-.passReset {
+
+.loginCard {
     width: 65.2rem;
-    height: 52.385rem;
-}
-
-.passReset img {
-    margin-top: 3.6rem;
-}
-
-.passReset h3 {
-    font-size: 2.6rem;
-    color: #fff;
-    margin-top: 5.8rem;
-    /* margin-bottom: 1.5rem; */
-    font-family: 'Typo Round Regular Demo Regular';
-}
-
-.passReset .otpForm button {
-    margin-top: auto;
+    height: auto;
+    margin: 14.5% auto 14% auto;
 }
 
 .loginForm {
@@ -97,13 +93,25 @@ footer {
 }
 
 .input {
-    width: 48.9rem;
-    height: 5.5rem;
-    margin-top: 4rem;
+    width: 75%;
+    height: 7.86%;
+    margin-bottom: 6.13%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px .3rem .6rem #00000029;
     border-radius: .5rem;
     display: inline-block;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .fa-solid {
@@ -127,58 +135,91 @@ footer {
     color: #AAAAAA;
 }
 
+.placeholderRed ::placeholder {
+    color: red;
+}
+
 .loginForm button {
     width: 14rem;
     height: 4.5rem;
     font-size: 2rem;
     background-color: transparent;
     color: #fff;
-    border: .2rem solid #FFFFFF;
+    border: 2px solid #FFF;
     box-shadow: .3rem .3rem .5rem #782A80;
     border-radius: 2.3rem;
-    margin-top: 5.8rem;
+    margin: 2.57%;
     cursor: pointer;
     font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
 }
 
-.regButton {
-    text-align: center;
+.submitCard .regButton {
+    width: auto;
+    display: inline-block;
+    margin-top: 13%;
+    margin-bottom: 6%;
+    /* height: 10rem; */
+    border: none;
 }
 
-.regButton h3 {
+.submitCard .regButton h3 {
     font-size: 2.6rem;
     color: #fff;
-    margin-top: 5.8rem;
-    margin-bottom: 1.5rem;
+    margin-top: -5rem;
+    margin-bottom: 2rem;
     font-family: 'Typo Round Regular Demo Regular';
 }
 
-.regButton button {
+.submitCard .regButton button {
     font-size: 2.4rem;
     width: 21.1rem;
     height: 5.4rem;
     margin: auto;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFF;
     border-radius: 2.7rem;
+    border: none;
     font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
 }
 
-.loginForm button:hover,
-.regButton button:hover {
+.loginForm:hover button {
     background: transparent linear-gradient(135deg, #9e4ab1 0%, #be222a 100%) 0% 0% no-repeat padding-box;
     transition: all linear 0.4s;
     box-shadow: 0px 0px 20px #9e4ab1;
     color: #fff;
 }
 
-
-.forgotPass {
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
-    font-family: roboto;
+.regButton button:hover {
+    color: #E11722;
 }
 
+.nextBtn {
+    margin-bottom: 4.5rem;
+}
+
+.passReset img {
+    margin-top: 3.8rem;
+    margin-bottom: 4.69rem;
+}
+
+.passReset h3 {
+    font-size: 2.6rem;
+    color: #fff;
+    padding-bottom: 2.5rem;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.passReset .input {
+    margin-bottom: 0;
+}
+
+.forgotPass {
+    font-size: 2.4rem;
+}
+
+.forgotPass a,
+.otpResend a {
+    color: #F6BD30;
+}
 
 .otpResend {
     font-size: 18px;
@@ -189,18 +230,16 @@ footer {
     font-family: roboto;
 }
 
-.forgotPass a,
-.otpResend a {
-    color: #F6BD30;
-}
-
 .admittedClass {
-    width: 65.2rem;
     height: 38.51rem;
 }
 
+.admittedClass h2 {
+    height: 5.8rem;
+}
+
 .admittedClass .admit {
-    width: 30rem;
+    width: 50%;
     height: 5rem;
     margin: auto;
     text-align: center;
@@ -225,23 +264,22 @@ footer {
     border: none;
 }
 
-.admittedClass .admit i:hover,
+.admittedClass .admit:hover i,
 .selectBirthday i {
     color: #fff;
     padding: 1.2rem;
+    margin-top: 0.5px;
     background-color: red;
     border-radius: 10%;
-    margin-top: 0.5px;
-    transition: all linear 0.3s;
-}
-
-.admittedClass .admit a:hover {
-    font-size: 4rem;
     transition: all linear 0.1s;
 }
 
+.admittedClass .admit:hover a {
+    font-size: 4rem;
+    transition: all linear 0.2s;
+}
+
 .selectBirthday {
-    width: 65.2rem;
     height: 28.755rem;
 }
 
@@ -250,41 +288,23 @@ footer {
 }
 
 .selectBirthday select {
-    padding: .3rem;
+    padding: .8rem;
     font-size: 24px;
-}
-
-.selectBirthday select .placeholder {
     color: #AAAAAA;
-}
-
-.selectBirthday input.date {
-    width: 50px;
-    background-color: #be222a;
-    font-size: 20px;
+    font-family: 'Typo Round Regular Demo Regular';
 }
 
 .selectBirthday i {
     margin: 0 0 -1.7rem -1rem;
 }
 
-.newPassword {
-    width: 65.2rem;
-    height: 53.3rem;
-}
-
 .newPassword h2 {
-    width: 49.5rem;
+    width: 90%;
     margin-bottom: 5.2rem;
 }
 
 .success {
-    width: 65.2rem;
     height: 47.307rem;
-}
-
-.success img {
-    margin-top: 3.73rem;
 }
 
 .success span {
@@ -292,15 +312,15 @@ footer {
     font-size: 4.579rem;
     color: #FED481;
     letter-spacing: 2.75px;
-    margin-top: 2.35rem;
     margin-bottom: 1.72rem;
     display: block;
     font-family: 'Typo Round Demo';
 }
 
+.success img {
+    margin-bottom: 1.95rem;
+}
+
 .success h3 {
-    font-size: 2.4rem;
-    color: #fff;
-    /* margin-bottom: 1.5rem; */
-    font-family: 'Typo Round Regular Demo Regular';
+    margin-bottom: 0rem;
 }

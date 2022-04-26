@@ -24,9 +24,9 @@
 
 <body>
     <header>
-        <section class="loginArea">
+        <section class="banner loginArea">
             <nav id="navbar" class="navbar sticky-top">
-                <div class="container">
+                <div class="container container-mobile">
                     <div class="logo">
                         <a href="index.html">
                             <img src="./Logo/logo_small.png" alt="png/img">
@@ -42,29 +42,26 @@
                                 </label>
                             </form>
                         </div>
-
-                        <div class="nav-link float-start userProfile">
-                            <form class="" action="./login.html">
-                                <img src="./Icon/userProfile.png" alt="user/png">
-                            </form>
+                        <div class="userProfile float-end">
+                            <img src="./Icon/userProfile.png" alt="user/png">
                         </div>
 
                     </div><!-- navMenu close-->
                 </div>
-            </nav><!-- =================== navbar end  =================== -->
-            <div class="container">
-                <div class="loginCard submitCard d-block mx-auto">
+            </nav>
+            <!--=================== navbar end  ===================-->
 
+            <div class="container registerBGHeight">
+                <div class="loginCard submitCard">
                     <h2 class="mx-auto">সকল সেবা পেতে Phone Number এবং
                         Password দিয়ে Log In করো</h2>
-
 
                     <form class="loginForm" action="./loginWrongInfo.html">
                         <div class="input clearfix">
                             <label for="phoneNumber">
                                 <i class="fa-solid fa-phone form-control-feedback"></i>
                             </label>
-                            <input class="searchInput" type="number" name="phone Number"
+                            <input class="searchInput" type="number" name="phoneNumber"
                                 placeholder="Enter Phone Number">
                         </div>
                         <div class="input clearfix">
@@ -77,13 +74,12 @@
                         <button type="submit">Submit</button>
                     </form>
 
-                    <form class="regButton" action="./forgot.html">
+                    <form class="regButton mx-auto" action="./forgot.html">
                         <h3>User Name ও Password নেই?</h3>
                         <button class="submit" type="submit">
                             রেজিস্ট্রেশন করো
                         </button>
                     </form>
-
                 </div>
             </div>
         </section>

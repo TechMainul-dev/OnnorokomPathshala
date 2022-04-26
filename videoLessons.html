@@ -10,6 +10,7 @@
     <link rel="icon" href="./img/onnorokomPathshala_icon.png">
     <link rel="stylesheet" href="./css/all.css"> <!-- fontAwesome css file  -->
     <link rel="stylesheet" href="./css/bootstrap.css"> <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- my stylesheet -->
     <link rel="stylesheet" href="./css/dashboard.css"> <!-- my stylesheet -->
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/responsive.css"> <!-- my responsive stylesheet -->
@@ -23,9 +24,9 @@
 </head>
 
 <body>
-    <div class="bg">
+    <div class="bg dashboardHome">
         <nav id="navbar" class="navbar sticky-top">
-            <div class="container">
+            <div class="container container-mobile">
                 <div class="logo">
                     <a href="index.html">
                         <img src="./Logo/logo_small.png" alt="png/img">
@@ -41,16 +42,14 @@
                             </label>
                         </form>
                     </div>
-
-                    <div class="nav-link float-start userProfile">
-                        <form class="" action="./login.html">
-                            <img src="./Icon/userProfile.png" alt="user/png">
-                        </form>
+                    <div class="userProfile float-end">
+                        <img src="./Icon/userProfile.png" alt="user/png">
                     </div>
 
                 </div><!-- navMenu close-->
             </div>
-        </nav><!-- =================== navbar end  =================== -->
+        </nav>
+        <!--=================== navbar end  ===================-->
 
 
         <div class="videoPage container">
@@ -61,18 +60,17 @@
 
                     <div class="col headContent">
                         <div class="duration">
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                            <span class="category">24:20:55</span>
                             <i class="fa-solid fa-video"></i>
                             <span class="category">105</span>
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <span class="category">24:20:55</span>
                         </div>
-
                         <br>
                         <span class="h3">Video Lessons</span> <span class="category">(Based on Chapters)</span>
 
                     </div>
                     <div class="col headIcon">
-                        <select class="border">
+                        <select>
                             <option class="placeHolder" disabled selected hidden> ২য় পত্র
                             </option>
                             <option>01</option>
@@ -84,13 +82,13 @@
                     </div>
 
                 </div>
+                <hr class="borderSpecial">
                 <br>
                 <div>
                     <div class="videoPlaylist">
-                        <hr>
                         <div class="videoContent">
                             <h3>অধ্যায় - ১: তাপগতিবিদ্যা</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
@@ -101,7 +99,7 @@
                         <hr>
                         <div class="videoContent">
                             <h3>অধ্যায় - ২: স্থির তড়িৎ</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
@@ -112,7 +110,7 @@
                         <hr>
                         <div class="videoContent">
                             <h3>অধ্যায় - ১: তাপগতিবিদ্যা</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
@@ -124,7 +122,7 @@
                         <div class="videoContent">
                             <h3>অধ্যায় - ৪: তড়িৎ প্রবাহের চৌম্বক <br>
                                 ক্রিয়া ও চুম্বুকত্ত</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
@@ -135,7 +133,7 @@
                         <hr>
                         <div class="videoContent">
                             <h3>অধ্যায় - ১: তাপগতিবিদ্যা</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
@@ -146,7 +144,7 @@
                         <hr>
                         <div class="videoContent">
                             <h3>অধ্যায় - ১: তাপগতিবিদ্যা</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
@@ -157,7 +155,7 @@
                         <hr>
                         <div class="videoContent">
                             <h3>অধ্যায় - ১: তাপগতিবিদ্যা</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
@@ -168,7 +166,7 @@
                         <hr>
                         <div class="videoContent">
                             <h3>অধ্যায় - ১: তাপগতিবিদ্যা</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
@@ -179,14 +177,16 @@
                         <hr>
                         <div class="videoContent">
                             <h3>অধ্যায় - ১: তাপগতিবিদ্যা</h3>
-                            <time>Topics: 12 Videos: 06</time>
+                            <span>Topics: 12 Videos: 06</span>
                         </div>
 
                         <div class="watchPercentage">
                             <div class="percentage category">20%</div>
                         </div>
+                        <hr>
                     </div>
                 </div>
+
                 <div class="videoLoadMore">
                     <form class="playlist" action="./questionBank.html">
                         <button type="submit">

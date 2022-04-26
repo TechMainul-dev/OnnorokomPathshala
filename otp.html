@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <section class="loginArea">
+        <section class="otp loginArea banner">
             <nav id="navbar" class="navbar sticky-top">
                 <div class="container">
                     <div class="logo">
@@ -37,7 +37,7 @@
                             <form action="index.html" method="get">
                                 <input class="search expandRight" id="searchright" type="search" name="q"
                                     placeholder="অনুসন্ধান">
-                                <label class="searchButton" for="searchright">
+                                <label class="searchButton me-1" for="searchright">
                                     <img src="./Icon/topSearch.png" alt="search/png">
                                 </label>
                             </form>
@@ -56,29 +56,31 @@
                     </div><!-- navMenu close-->
                 </div>
             </nav><!-- =================== navbar end  =================== -->
-            <div class="container">
-                <div class="passReset submitCard d-block mx-auto">
-                    <img class="mx-auto" src="./Icon/sms.png" alt="smsIcon/png">
-                    <h3 class="mx-auto">তোমার 01671813671 নম্বরে একটি OTP পাঠানো হয়েছে। </h3>
 
+            <div class="container registerBGHeight">
+                <div class="loginCard submitCard passReset">
+                    <img src="./Icon/sms.png" alt="smsIcon/png">
+                    <h3 class="mx-auto mb-2">তোমার 01671813671 নম্বরে একটি OTP পাঠানো হয়েছে। </h3>
 
-                    <form class="loginForm otpForm" action="./selectClass.html">
+                    <form class="loginForm" action="./selectClass.html">
                         <div class="input clearfix">
                             <label for="otp">
                                 <i class="fa-solid fa-file form-control-feedback"></i>
                             </label>
-                            <input class="searchInput" type="password" name="otp" placeholder="Enter OTP">
+                            <input class="searchInput" type="text" name="otp" placeholder="Enter OTP">
                         </div>
-                        <br>
                         <div class="otpResend p-2">
                             Don't get OTP yet? <a href="./otp.html">Resend OTP <span id="timer"></span> </a>
                         </div>
                         <br>
-                        <button type="submit">submit</button>
+                        <div class="nextBtn">
+                            <button type="submit">Submit</button>
+                        </div>
                     </form>
-
                 </div>
             </div>
+
+
         </section>
     </header> <!-- ================ header area end ================= -->
 
