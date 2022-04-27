@@ -198,7 +198,9 @@ time {
 }
 
 .studyIncrease .increaseVolume .volumeBorder .skills span {
-    padding: .6rem .4rem;
+    padding: .8rem .6rem;
+    color: #000;
+    font-weight: 500;
     background-color: #fff;
     border-radius: 50%;
     font-size: 100%;
@@ -210,7 +212,7 @@ time {
 }
 
 .studyIncrease .increaseVolume .phy .skills span {
-    border: .5rem solid #916bd3;
+    border: .7rem solid #916bd3;
 }
 
 .studyIncrease .increaseVolume .phy .physics {
@@ -225,7 +227,7 @@ time {
 }
 
 .studyIncrease .increaseVolume .mat .skills span {
-    border: .5rem solid #FFC46D;
+    border: .7rem solid #FFC46D;
 }
 
 .studyIncrease .increaseVolume .mat .math {
@@ -240,8 +242,8 @@ time {
 }
 
 .studyIncrease .increaseVolume .che .skills span {
-    border: .5rem solid #DE62FA;
-    padding: .55rem 0rem;
+    border: .7rem solid #DE62FA;
+    padding: .9rem .4rem;
 }
 
 .studyIncrease .increaseVolume .che .chemistry {
@@ -256,7 +258,7 @@ time {
 }
 
 .studyIncrease .increaseVolume .bio .skills span {
-    border: .5rem solid #3DBFFC;
+    border: .7rem solid #3DBFFC;
 }
 
 .studyIncrease .increaseVolume .bio .biology {
@@ -326,7 +328,7 @@ time {
 .videoPage {
     margin-top: 8rem;
     background-color: #fff;
-    border: 2px solid #aaa;
+    box-shadow: 0px 0px 5px #00000029;
 }
 
 .videoPageContainer {
@@ -358,12 +360,9 @@ time {
     float: left;
 }
 
-.videoPlaylistArea .videoPlaylist .videoContent .videoDetails h3 {
-    text-align: left;
-}
-
-.videoPlaylistArea .videoPlaylist .videoContent .videoDetails time {
-    float: left;
+.videoHead .headIcon img {
+    float: right;
+    margin-left: 2rem;
 }
 
 .videoHead .headContent .h1 {
@@ -376,13 +375,27 @@ time {
     font-weight: bold;
 }
 
-.videoHead .headIcon img {
-    float: right;
-    margin-left: 2rem;
+.videoPlaylistArea .videoPlaylist .videoContent {
+    margin-top: 3rem;
 }
 
-.watchPercentage {
-    float: right;
+.videoPlaylistArea .videoPlaylist .videoContent:hover {
+    color: #792A7F;
+}
+
+.videoPlaylistArea .videoPlaylist .videoContent .thumbnail img {
+    width: 10rem;
+    height: 6.8rem;
+}
+
+.videoPlaylistArea .videoPlaylist .videoContent .videoDetails h3 {
+    text-align: left;
+}
+
+.videoPlaylistArea .videoPlaylist .videoContent .videoDetails time {
+    float: left;
+    font-weight: 500;
+    color: #000;
 }
 
 hr {
@@ -397,7 +410,7 @@ hr {
 
 .percentage {
     position: relative;
-    top: 6px;
+    top: 4px;
     left: 4px;
     text-align: center;
     width: 50px;
@@ -409,12 +422,14 @@ hr {
 .watchPercentage {
     position: relative;
     text-align: center;
+    float: right;
     width: 58px;
-    height: 55px;
+    height: 58px;
     margin-left: 0%;
+    margin-bottom: 2.5rem;
     border-radius: 50%;
     background-color: #1A73E8;
-    background-image: linear-gradient(170deg, transparent 35%, #f0f0f0 35%), linear-gradient(90deg, #f0f0f0 10%, transparent 10%);
+    background-image: linear-gradient(170deg, transparent 33%, #D8DADE 35%), linear-gradient(0deg, #D8DADE 80%, transparent 0%);
 }
 
 .watchPercentage .category {
@@ -424,7 +439,7 @@ hr {
 }
 
 .videoPlaylistArea {
-    padding-bottom: 10rem;
+    padding-bottom: 0rem;
 }
 
 .videoPageContainer form {
@@ -512,8 +527,9 @@ hr {
 
 .videoLessons .videoPlaylist .videoContent h3 {
     font-size: 2.6rem;
-    font-weight: bold;
-    font-family: 'Typo Round Regular Demo Regular';
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: normal;
+    font-weight: 500;
     text-align: left;
     color: #792A7F;
 }
@@ -530,9 +546,9 @@ hr {
     margin-bottom: 3rem;
 }
 
-.videoLessons .videoLoadMore {
-    margin-top: 7.34rem;
-    margin-bottom: 2.4rem;
+.videoLessons .videoLoadMore button {
+    margin-top: 5.8rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 
@@ -634,6 +650,7 @@ hr {
 
 .vpPage .display-1 {
     font-size: 4.6rem;
+    font-weight: bold;
     color: #3289F1;
     font-family: 'Typo Round Regular Demo Regular';
     padding-top: 13.5rem;
@@ -664,9 +681,15 @@ hr {
     margin-left: 5%;
 }
 
+.videoPlaylistPage .addBtn {
+    width: 70%;
+    margin: 1rem auto auto 1rem;
+}
+
 .videoPlaylistPage .addBtn span {
     color: #762A82;
-    font-size: 2.6rem;
+    font-size: 2rem;
+    font-weight: bold;
     margin-left: 5%;
     font-family: 'Typo Round Regular Demo Regular';
 }
@@ -677,13 +700,14 @@ hr {
     font-weight: bold;
     padding: 0 0.2rem;
     border-radius: 50%;
-    border: 2px solid #762A82;
+    border: 3px solid #762A82;
 }
 
 .videoPlaylistPage .videoListArea li:hover,
 .playListContent {
     color: #762A82;
     background: #E3E3E3;
+    font-weight: 500;
     cursor: pointer;
     box-shadow: 0px 0px 6px #00000029;
     transition: all linear 0.3s;
@@ -745,7 +769,7 @@ hr {
 
 .profilePage .profileSidebar {
     width: 100%;
-    margin-top: -35rem;
+    margin-top: -15rem;
 }
 
 .profilePage .profileSidebar .profilePicture {

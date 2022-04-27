@@ -114,7 +114,10 @@ a {
     overflow: hidden;
     height: 7.9rem;
 }
-
+.navbar-toggler{
+    width: auto;
+    height: auto;
+}
 .customToggler {
     display: none;
 }

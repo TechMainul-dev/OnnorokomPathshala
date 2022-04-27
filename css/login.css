@@ -35,13 +35,15 @@ html {
 
 h2 {
     font-size: 3rem;
-    width: 67.94%;
+    width: 70%;
     height: 8.8rem;
     color: #fff;
     text-align: center;
     margin-top: 7.98%;
     margin-bottom: 9.66%;
     font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 300;
 }
 
 .submitCard {
@@ -172,9 +174,11 @@ input[type=number] {
 
 .submitCard .regButton button {
     font-size: 2.4rem;
+    font-weight: 500;
     width: 21.1rem;
     height: 5.4rem;
     margin: auto;
+    color: #742C85;
     background: #FFF;
     border-radius: 2.7rem;
     border: none;
@@ -205,7 +209,9 @@ input[type=number] {
     font-size: 2.6rem;
     color: #fff;
     padding-bottom: 2.5rem;
-    font-family: 'Typo Round Regular Demo Regular';
+    font-family: 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 100;
 }
 
 .passReset .input {
@@ -222,12 +228,13 @@ input[type=number] {
 }
 
 .otpResend {
-    font-size: 18px;
+    font-size: 2rem;
     color: #fff;
     text-align: right;
     margin-right: 13%;
     line-height: 30px;
-    font-family: roboto;
+    /* font-family: roboto; */
+    font-weight: lighter;
 }
 
 .admittedClass {
@@ -299,8 +306,15 @@ input[type=number] {
 }
 
 .newPassword h2 {
-    width: 90%;
+    width: 75%;
     margin-bottom: 5.2rem;
+    font-family: 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.newPassword .loginForm button {
+    margin-bottom: 5rem;
 }
 
 .success {

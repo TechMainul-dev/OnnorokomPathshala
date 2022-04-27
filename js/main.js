@@ -50,19 +50,6 @@ jQuery(document).ready(function ($) {
 
 // Counter function end =========================
 
-// html import function start ===================
-
-/* 
-$(function () {
-    $("#navbarImport").load("../navbarImport.html");
-});
- */
-
-
-$(function () {
-    $("#footer").load("../footer.html");
-});
-// html import function end ======================
 
 // OTP countdown function start====================
 let timerOn = true;
