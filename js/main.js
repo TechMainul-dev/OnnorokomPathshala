@@ -15,27 +15,20 @@ function navbarFunction() {
 } // scroll sticky function end================
 
 
-// video play button function start===========
-$(document).ready(function () {
-    var ctrlVideo = document.getElementById("video");
-    $('button').click(function () {
-        if ($('button').hasClass("active")) {
+// navbar-toggler button function start===========
+let btn = document.querySelector(".navbar-toggler");
+let icon = btn.querySelector(".fa-bars");
 
-            ctrlVideo.play();
+btn.onclick = function () {
+    if (icon.classList.contains("fa-bars")) {
+        icon.classList.replace("fa-bars", "fa-times");
+    }
+    else {
+        icon.classList.replace("fa-times", "fa-bars");
+    }
+}
 
-            $('button').html("Pause");
-            $('button').toggleClass("active");
-        } else {
-
-            ctrlVideo.pause();
-
-            $('button').html("play");
-            $('button').toggleClass("active");
-        }
-    });
-});
-
-// video play button function end===============
+// navbar-toggler button function end===============
 
 
 // Counter function start=======================

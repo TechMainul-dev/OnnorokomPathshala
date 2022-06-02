@@ -114,10 +114,20 @@ a {
     overflow: hidden;
     height: 7.9rem;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     width: auto;
     height: auto;
+    margin-left: -3rem;
+    color: transparent;
 }
+
+.navbar-toggler .fa-bars,
+.fa-times {
+    color: #fff;
+    font-size: 2rem;
+}
+
 .customToggler {
     display: none;
 }
@@ -319,7 +329,7 @@ nav button {
 }
 
 .selectedVideoHeader {
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-bottom: 5rem;
 }
 
@@ -330,13 +340,14 @@ nav button {
 
 .selectedPlaylist .card {
     width: 35.1rem;
-    height: 40.3rem;
+    min-height: 40.3rem;
     border-radius: 15px;
     border: none;
     margin: 6px;
     box-shadow: 0px 0px 2rem #D9DCE3;
     display: inline-block;
     margin-top: 3rem;
+    position: relative;
 }
 
 .hoverCard-body {
@@ -357,7 +368,7 @@ nav button {
     background-size: cover;
     top: 0;
     width: 100%;
-    height: 50%;
+    height: 20rem;
     border-radius: 10px 10px 0 0;
 }
 
@@ -376,7 +387,7 @@ nav button {
 .selectedPlaylist .card button {
     width: 56px;
     height: 56px;
-    margin-top: -25px;
+    margin-top: -27px;
     border-radius: 50px;
     border: none;
     background: transparent linear-gradient(135deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
@@ -389,12 +400,20 @@ nav button {
 }
 
 .selectedPlaylist .card .card-body {
-    width: 326px;
+    width: 97%;
+    height: auto;
     padding: 2.1rem 0rem 0rem 2rem;
 }
 
 .selectedPlaylist .card .card-body h2 {
     font-size: 2.6rem;
+    max-width: 65%;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: left;
 }
 
 .selectedPlaylist .card .card-body h4 {
@@ -411,23 +430,40 @@ nav button {
 }
 
 .selectedPlaylist .card .card-body h3 {
-    height: 7rem;
+    /* height: 7rem; */
     font-size: 2rem;
     text-align: left;
     font-weight: 400;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     font-family: 'Typo Round Regular Demo Regular';
 }
 
 .selectedPlaylist .card .card-body hr {
     border: .1px solid #742B84;
+    margin: 20px auto;
 }
 
 .selectedPlaylist .card .card-body p {
+    width: 95%;
+    position: absolute;
+    display: flex;
     font-size: 1.8rem;
     font-weight: 450;
 }
 
+.selectedPlaylist .card .card-body .group_name {
+    width: 60%;
+    text-align: left;
+    bottom: 0;
+}
+
 .selectedPlaylist .card .card-body .qty {
+    text-align: right;
+    margin: auto;
     font-size: 1.4rem;
     color: #7D8597;
     font-family: 'Typo Round Regular Demo Regular';
@@ -435,6 +471,98 @@ nav button {
 
 
 /* --------------selectedVideo css area end-------------- */
+
+/* --------------------------------
+newSelectedVideo section area start ------------------------------- */
+.newSelectedVideo .card {
+    min-height: 403px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2rem #D9DCE3;
+}
+
+.newSelectedVideo .card .card-header img {
+    border-radius: 18px auto;
+    width: 100%;
+}
+
+.newSelectedVideo .card .card-header .hoverCard {
+    font-size: 1.8rem;
+    font-weight: 450;
+    background-color: #fff;
+    padding: .4rem 3.3rem;
+    border-radius: 15px 0 0 0;
+    display: none;
+}
+
+.newSelectedVideo .card:hover .card-header .hoverCard {
+    display: flex;
+    /* transition: all linear 4s; */
+}
+
+.newSelectedVideo .card .card-header button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    border: none;
+    background: transparent linear-gradient(135deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.newSelectedVideo .card .card-body .card-title {
+    font-size: 26px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+}
+
+.newSelectedVideo .card .card-body .duration {
+    font-size: 14px;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.newSelectedVideo .card .card-body .card-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: 'Typo Round Regular Demo Regular';
+}
+
+.newSelectedVideo .card hr {
+    border: .5px solid #742B84;
+}
+
+.newSelectedVideo .card .card-footer {
+    margin-bottom: 14px;
+    font-family: 'Typo Round Regular Demo Regular', 'Hind Siliguri';
+}
+
+.newSelectedVideo .card .card-footer .card-link {
+    font-size: 18px;
+}
+
+.newSelectedVideo .card .card-footer .views {
+    font-size: 14px;
+}
+
+/* --------------------------------
+newSelectedVideo section area end ------------------------------- */
+
+
+
+
 /* --------------recentlyAdded css area start-------------- */
 
 .recentlyAdded {
@@ -452,13 +580,14 @@ nav button {
 
 .recentlyAdded .recentPlaylist .card {
     width: 25rem;
-    height: 33.742rem;
+    min-height: 33.742rem;
     border-radius: 10px;
     box-shadow: 0px 0px 2rem #D9DCE3;
     margin-top: 3rem;
     display: inline-block;
     margin: 1rem;
     margin-bottom: 3rem;
+    position: relative;
 }
 
 .recentPlaylist .card .card-img {
@@ -470,7 +599,7 @@ nav button {
 .recentPlaylist .card .playBtn {
     width: 41px;
     height: 41px;
-    margin-top: -4rem;
+    margin-top: -2rem;
     border-radius: 50px;
     border: none;
     background: transparent linear-gradient(135deg, #742B84 0%, #E11722 100%) 0% 0% no-repeat padding-box;
@@ -478,7 +607,7 @@ nav button {
     font-size: 18px;
     align-items: center;
     position: absolute;
-    top: 49%;
+    /* top: 48%; */
     left: 40%;
 }
 
@@ -491,11 +620,11 @@ nav button {
 .recentPlaylist .card .card-body .header {
     margin-top: 1.6rem;
     margin-bottom: .8rem;
-
 }
 
 .recentPlaylist .card .card-body h2 {
     font-size: 22px;
+    max-width: 60%;
 }
 
 .recentPlaylist .card .card-body h4 {
@@ -506,12 +635,22 @@ nav button {
 }
 
 .recentPlaylist .card .card-body h3 {
-    height: 82px;
+    /* height: 82px; */
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 2.8rem;
     text-align: left;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     font-family: 'Typo Round regular Demo Regular';
+}
+
+.recentPlaylist .card .card-body .emotion_area {
+    position: absolute;
+    bottom: -4.5%;
+    width: 91%;
 }
 
 .recentPlaylist .card .card-body .card-text button {
@@ -685,10 +824,5 @@ footer {
     font-weight: 500;
     font-family: 'Typo Round Thin Demo Regular';
 }
-
-/* .copyright:hover {
-    color: chartreuse;
-    transition: all linear 0.3s;
-} */
 
 /* ================ Footer area css end ================= */

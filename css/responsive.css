@@ -296,30 +296,33 @@
     }
 
     footer {
-        margin-top: 4.6rem;
+        margin-top: 4.5rem;
         height: auto;
         background: transparent linear-gradient(180deg, #762A82 0%, #9A245F 100%) 0% 0% no-repeat padding-box;
     }
 
     .footer .footerArea {
-        margin-top: -4rem;
+        margin-top: 0rem;
     }
 
     .footer .contactDetails {
         width: 50%;
-        margin-top: 8rem;
+        margin: 2rem auto 2rem auto;
+        height: auto;
     }
 
     .contactDetails h2 {
         font-size: 1.8rem;
+        /* margin-bottom: 1rem; */
     }
 
     .contactDetails .footerLogo img {
-        width: 95%;
+        width: 75%;
     }
 
     .contactDetails ul li a {
         font-size: 1.4rem;
+        line-height: 3rem;
     }
 
     .footer .footerArea .right h2 {
@@ -336,10 +339,9 @@
     }
 
     .copyright {
-        padding-top: 3rem;
-        padding-bottom: 5rem;
-        margin-top: 7rem;
-        margin-bottom: 0rem;
+        padding-top: 2.5rem;
+        padding-bottom: 5.5rem;
+        margin: 0rem;
         border-top: 2px solid #A7608F;
     }
 
@@ -369,8 +371,8 @@
         margin-top: -.3rem;
     }
 
-    .footer {
-        margin-top: 12rem;
+    .loginArea {
+        height: 60rem;
     }
 
     .loginCard {
